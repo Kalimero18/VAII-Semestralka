@@ -1,0 +1,336 @@
+.uvod {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.uvodny-text {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+.uvodny-text h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.uvodny-text p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.uvodny-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.uvodny-text li {
+    margin-bottom: 5px;
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------Intro----------------------------------------------------------- */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro-text {
+    flex: 1;
+    max-width: 75%;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 50px;
+    border: 4px solid darkgrey;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+.intro-text h1 {
+    text-align: center;
+}
+
+.intro-obr {
+    flex: 1;
+    max-width: 25%;
+    text-align: center;
+}
+
+.intro-obr img {
+    width: auto;
+    height: 350px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-text, .intro-obr {
+        max-width: 100%;
+    }
+
+    .intro-text h1 {
+        text-align: center;
+    }
+
+    .intro-obr {
+        margin-top: 20px;
+    }
+}
+
+
+/* --------------------------------------------------- Pozadia ---------------------------------------------------- */
+
+.kontent {
+    background-color: black;
+}
+
+/* --------------------------------------------------- Supiska ---------------------------------------------------- */
+
+.supiska {
+    margin-right: 20px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.supiska-kontent {
+    justify-content: space-between;
+}
+
+.supiska-txt {
+    display: flex;
+    border: 4px solid darkgrey;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left: 70px;
+}
+
+.supiska-txt h1 {
+    text-align: center;
+    align-content: center;
+}
+
+.brankari {
+    margin-top: 10px;
+    flex: 25%;
+}
+
+.obrancovia {
+    margin-top: 10px;
+    flex: 25%;
+}
+
+.stredopoliari {
+    margin-top: 10px;
+    flex: 25%;
+}
+
+.utocnici {
+    margin-top: 10px;
+    flex: 25%;
+}
+
+.supiska-obr {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.supiska-obr p {
+    border: 4px solid darkgrey;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-top: 5px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.supiska-obr img {
+    width: 1200px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.ikona-vlajky {
+    width: 20px;
+    height: auto;
+}
+
+@media (max-width: 1800px) {
+    .supiska-kontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .supiska {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .supiska-obr {
+        margin-top: 20px;
+        align-content: center;
+    }
+}
+
+/* --------------------------------------------------- Stadion ---------------------------------------------------- */
+
+.stadion {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.stadion-kontent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.stadion-txt h1 {
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+}
+
+.stadion-txt {
+    width: 50%;
+    padding-right: 20px;
+    font-family: 'Verdana', sans-serif;
+    border: 4px solid darkgrey;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.stadion-obr {
+    width: 50%;
+    text-align: right;
+}
+
+.stadion-obr img {
+    margin-left: 10px;
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1400px) {
+    .stadion-kontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stadion-obr {
+        margin-top: 20px;
+        height: auto;
+        align-content: center;
+    }
+}
+/* ----------------------------------------------- Manazeri ---------------------------------------------- */
+
+.treneri {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tabulka-kontainer {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px dimgrey;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 4px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: slategrey;
+    font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+    .treneri {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ----------------------------------------------------------Uspechy--------------------------------------------*/
+.uspechy {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.trofeje {
+    flex: 75%;
+    border: 4px solid darkgrey;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left: 20px;
+}
+
+.trofeje h1, h2 {
+    margin-left: 20px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.trofeje ul, p {
+    margin-left: 20px;
+}
+
+.trofeje-obr {
+    flex: 25%;
+    align-content: center;
+}
+
+.trofeje-obr img {
+    width: 450px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.trofeje-obr p {
+    border: 4px solid darkgrey;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-top: 5px;
+    margin-right: 40px;
+    text-align: center;
+}
