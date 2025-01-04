@@ -115,110 +115,123 @@
         </div>
     </section>
 
-    <section class="stadion">
-        <div class="stadion-kontent">
-            <div class="stadion-txt">
-                <h1>Tottenham Hotspur Stadium</h1>
-                <p> Tottenham Hotspur Stadium je jedným z najmodernejších futbalových štadiónov na svete, a slúži ako domovský štadión pre klub Tottenham Hotspur.
+    <section class="stadion container-fluid py-4">
+        <div class="row align-items-center mx-2">
+            <div class="col-md-6 stadion-txt">
+                <h1 class="text-center">Tottenham Hotspur Stadium</h1>
+                <p>
+                    Tottenham Hotspur Stadium je jedným z najmodernejších futbalových štadiónov na svete, a slúži ako domovský štadión pre klub Tottenham Hotspur.
                     Otvorený bol v apríli 2019 a nachádza sa na mieste starého White Hart Lane v severnom Londýne. S kapacitou 62 850 divákov je to najväčší klubový štadión v Londýne a jeden z najväčších v Anglicku. <br>
                     Štadión bol navrhnutý s ohľadom na moderné potreby fanúšikov a hráčov, s prvotriednou technológiou a pohodlnými zariadeniami. Jednou z jeho najvýraznejších funkcií je plne vysúvateľný trávnik,
-                    ktorý umožňuje prechod medzi tradičným futbalovým povrchom a povrchom pre NFL zápasy, čo robí štadión univerzálnym športovým miestom. Vďaka tejto inovácii sa Tottenham Hotspur Stadium stal prvým štadiónom v Európe, ktorý bol oficiálne prispôsobený pre zápasy NFL.
-                    Stavba je navrhnutá s ohľadom na trvalú udržateľnosť, s využitím obnoviteľných materiálov a systémami na znižovanie uhlíkovej stopy. Je považovaná za jeden z najzelenších štadiónov v Anglicku.<br>
+                    ktorý umožňuje prechod medzi tradičným futbalovým povrchom a povrchom pre NFL zápasy, čo robí štadión univerzálnym športovým miestom. Vďaka tejto inovácii sa Tottenham Hotspur Stadium stal prvým štadiónom v Európe, ktorý bol oficiálne prispôsobený pre zápasy NFL. <br>
+                    Stavba je navrhnutá s ohľadom na trvalú udržateľnosť, s využitím obnoviteľných materiálov a systémami na znižovanie uhlíkovej stopy. Je považovaná za jeden z najzelenších štadiónov v Anglicku. <br>
                     Tottenham Hotspur Stadium sa môže pochváliť najdlhším barom na európskych štadiónoch s dĺžkou 65 metrov. Tento bar s názvom „Goal Line Bar“ sa nachádza pozdĺž celej šírky tribúny South Stand. <br>
                     Tribúna South Stand pojme až 17 500 divákov a je navrhnutá tak, aby vytvárala intenzívnu atmosféru podobnú tým v nemeckých futbalových arénach, ako je „žltá stena“ Borussie Dortmund. <br>
                     Štadión má vlastný pivovar, ktorý produkuje čerstvé pivo podávané fanúšikom cez špeciálny systém „Bottoms Up“, ktorý rýchlo plní poháre pivom zdola. <br>
                     Na streche štadióna sa nachádza Sky Walk, čo je adrenalínový zážitok, ktorý návštevníkom umožňuje prechádzať sa po streche a obdivovať Londýn z výšky.
                 </p>
             </div>
-            <div class="stadion-obr">
-                <img src="{{ asset('pics/Tottenham-Stadium.jpg') }}" alt="Tottenham Hotspur Stadium">
+            <div class="col-md-6 stadion-obr">
+                <img src="{{ asset('pics/Tottenham-Stadium.jpg') }}" alt="Tottenham Hotspur Stadium" class="img-fluid rounded">
             </div>
         </div>
     </section>
-    <section class="treneri">
-        <div class="tabulka-kontainer">
-            <h1>Trénerský tím pre sezónu 2024/25</h1>
-            <table>
-                <tr>
-                    <th>Meno, Priezvisko</th>
-                    <th>Pozícia/Špecializácia</th>
-                </tr>
-                <tr>
-                    <td>Ange Postecoglou</td>
-                    <td>Hlavný Tréner</td>
-                </tr>
-                <tr>
-                    <td>Mile Jedinak</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Ryan Mason</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Matt Wells</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Nick Montgomery</td>
-                    <td>Tréner Štandartných situácií</td>
-                </tr>
-                <tr>
-                    <td>Rob Burch</td>
-                    <td>Tréner Brankárov</td>
-                </tr>
-                <tr>
-                    <td>Nigel Gibbs</td>
-                    <td>Tréner Akadémie</td>
-                </tr>
-                <tr>
-                    <td>Stuart Campbell</td>
-                    <td>Hlavný Lekár</td>
-                </tr>
-            </table>
-        </div>
-        <div class="tabulka-kontainer">
-            <h1>Manažment Tottenhamu Hotspurs FC</h1>
-            <table>
-                <tr>
-                    <th>Meno, Priezvisko</th>
-                    <th>Pozícia/Špecializácia</th>
-                </tr>
-                <tr>
-                    <td>Daniel Levy</td>
-                    <td>Vlastník</td>
-                </tr>
-                <tr>
-                    <td>Michael Green</td>
-                    <td>Spoluvlastník</td>
-                </tr>
-                <tr>
-                    <td>Joe Lewis</td>
-                    <td>Výlučný Podpredseda</td>
-                </tr>
-                <tr>
-                    <td>Paul Kemsley</td>
-                    <td>Riaditeľ Klubu</td>
-                </tr>
-                <tr>
-                    <td>Jennifer Urquhart</td>
-                    <td>Klubový sekretár</td>
-                </tr>
-                <tr>
-                    <td>Johan Lange</td>
-                    <td>Športový riaditeľ</td>
-                </tr>
-                <tr>
-                    <td>David Buchler</td>
-                    <td>Riaditeľ manažmentu</td>
-                </tr>
-                <tr>
-                    <td>Matthew Collecott</td>
-                    <td>Hlavný Manažer financií</td>
-                </tr>
-            </table>
+
+    <section class="treneri container-fluid my-4">
+        <div class="row mx-2 gy-4">
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Trénerský tím pre sezónu 2024/25</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Ange Postecoglou</td>
+                        <td>Hlavný Tréner</td>
+                    </tr>
+                    <tr>
+                        <td>Mile Jedinak</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Ryan Mason</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Matt Wells</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Nick Montgomery</td>
+                        <td>Tréner Štandartných situácií</td>
+                    </tr>
+                    <tr>
+                        <td>Rob Burch</td>
+                        <td>Tréner Brankárov</td>
+                    </tr>
+                    <tr>
+                        <td>Nigel Gibbs</td>
+                        <td>Tréner Akadémie</td>
+                    </tr>
+                    <tr>
+                        <td>Stuart Campbell</td>
+                        <td>Hlavný Lekár</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Manažment Tottenhamu Hotspurs FC</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Daniel Levy</td>
+                        <td>Vlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Green</td>
+                        <td>Spoluvlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Lewis</td>
+                        <td>Výlučný Podpredseda</td>
+                    </tr>
+                    <tr>
+                        <td>Paul Kemsley</td>
+                        <td>Riaditeľ Klubu</td>
+                    </tr>
+                    <tr>
+                        <td>Jennifer Urquhart</td>
+                        <td>Klubový sekretár</td>
+                    </tr>
+                    <tr>
+                        <td>Johan Lange</td>
+                        <td>Športový riaditeľ</td>
+                    </tr>
+                    <tr>
+                        <td>David Buchler</td>
+                        <td>Riaditeľ manažmentu</td>
+                    </tr>
+                    <tr>
+                        <td>Matthew Collecott</td>
+                        <td>Hlavný Manažer financií</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
+
     <section class="uspechy">
         <div class="trofeje">
             <h1>Tituly Tottenhamu Hotspur FC</h1>

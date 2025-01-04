@@ -110,114 +110,127 @@
         </div>
     </section>
 
-    <section class="stadion">
-    <div class="stadion-kontent">
-      <div class="stadion-txt">
-        <h1>Selhurst Park</h1>
-        <p> Selhurst Park je domovský štadión futbalového klubu Crystal Palace FC, nachádzajúci sa v oblasti Selhurst v južnom Londýne.
-          Bol otvorený v roku 1924 a od tej doby je považovaný za jeden z tradičných anglických futbalových štadiónov. Kapacita štadióna je približne 25 486 divákov,
-          čo ho radí medzi stredne veľké štadióny v rámci Premier League. <br>
-          Štadión je známy svojou elektrizujúcou atmosférou, najmä vďaka vášnivým priaznivcom Crystal Palace, ktorí na „Holmesdale Road Stand“
-          vytvárajú jedinečnú podporu počas zápasov. Selhurst Park bol viackrát renovovaný a upravovaný, aby vyhovoval moderným požiadavkám a zároveň si zachoval svoj pôvodný charakter. <br>
-          Hoci štadión čelí plánom na modernizáciu a rozšírenie, zachováva si historický vzhľad a autentickú futbalovú atmosféru, ktorú fanúšikovia milujú.
-          Crystal Palace plánuje rozšíriť kapacitu a zlepšiť zariadenia štadióna, aby zodpovedal vyššej kvalite a komfortu pre priaznivcov klubu i návštevníkov. <br>
-          Štadión zostal nedokončený až do roku 1969. Vtedy ale Crystal Palace po prvýkrát postúpil do Division One (vtedy najvyššej úrovne anglického futbalu). Bola postavená tribúna Arthura Waita,
-          pomenovaná po dlhoročnom predsedovi klubu, ktorý bol remeselnícky stavbár a často ho bolo vidieť, ako sám na štadióne pracoval. <br>
-          V roku 2018 klub oznámil rekonštrukciu Selhurst Parku v hodnote 100 miliónov libier, aby sa kvalitou priblížil modernému štadiónu akú si zaslúži klub hrajúci v Premier League.
-          Selhurst Park sa taktiež objavil a používal v seriáli Apple TV+ Ted Lasso ako Nelson Road, fiktívny domáci štadión AFC Richmond. <br>
-          Rekordná návštevnosť v Selhurst Parku bola zaznamenaná v roku 1979, keď 51 482 divákov videlo Crystal Palace poraziť Burnley 2:0. Crystal Palace vtedy vyhral majstrovský titul Football League Second Division.
-        </p>
-      </div>
-      <div class="stadion-obr">
-        <img src="{{ asset('pics/Selhurst-Park.JPG') }}" alt="Selhurst Park">
-      </div>
-    </div>
-  </section>
-  <section class="treneri">
-    <div class="tabulka-kontainer">
-      <h1>Trénerský tím pre sezónu 2024/25</h1>
-      <table>
-        <tr>
-          <th>Meno, Priezvisko</th>
-          <th>Pozícia/Špecializácia</th>
-        </tr>
-        <tr>
-          <td>Oliver Glasner</td>
-          <td>Hlavný Tréner</td>
-        </tr>
-        <tr>
-          <td>Ronald Brunmayr</td>
-          <td>Asistent Trénera</td>
-        </tr>
-        <tr>
-          <td>Paddy McCarthy</td>
-          <td>Asistent Trénera</td>
-        </tr>
-        <tr>
-          <td>Emanuel Pogatetz</td>
-          <td>Asistent Trénera</td>
-        </tr>
-        <tr>
-          <td>Michael Angerschmidt</td>
-          <td>Tréner Štandartných situácií</td>
-        </tr>
-        <tr>
-          <td>Dean Kiely</td>
-          <td>Tréner Brankárov</td>
-        </tr>
-        <tr>
-          <td>Darren Powell</td>
-          <td>Tréner Akadémie</td>
-        </tr>
-        <tr>
-          <td>Imtiaz Ahmad</td>
-          <td>Hlavný Lekár</td>
-        </tr>
-      </table>
-    </div>
-    <div class="tabulka-kontainer">
-      <h1>Manažment Crystal Palace FC</h1>
-      <table>
-        <tr>
-          <th>Meno, Priezvisko</th>
-          <th>Pozícia/Špecializácia</th>
-        </tr>
-        <tr>
-          <td>John Textor</td>
-          <td>Vlastník</td>
-        </tr>
-        <tr>
-          <td>Josh Harris</td>
-          <td>Spoluvlastník</td>
-        </tr>
-        <tr>
-          <td>Noah Abrams</td>
-          <td>Výlučný Podpredseda</td>
-        </tr>
-        <tr>
-          <td>Dougie Freedman</td>
-          <td>Riaditeľ Klubu</td>
-        </tr>
-        <tr>
-          <td>Christine Dowdeswell</td>
-          <td>Klubový sekretár</td>
-        </tr>
-        <tr>
-          <td>Dougie Freedman</td>
-          <td>Športový riaditeľ</td>
-        </tr>
-        <tr>
-          <td>Phil Alexander</td>
-          <td>Riaditeľ manažmentu</td>
-        </tr>
-        <tr>
-          <td>Sean O'Loughlin</td>
-          <td>Hlavný Manažer financií</td>
-        </tr>
-      </table>
-    </div>
-  </section>
-  <section class="uspechy">
+    <section class="stadion container-fluid py-4">
+        <div class="row align-items-center mx-2">
+            <div class="col-md-6 stadion-txt">
+                <h1 class="text-center">Selhurst Park</h1>
+                <p>
+                    Selhurst Park je domovský štadión futbalového klubu Crystal Palace FC, nachádzajúci sa v oblasti Selhurst v južnom Londýne.
+                    Bol otvorený v roku 1924 a od tej doby je považovaný za jeden z tradičných anglických futbalových štadiónov. Kapacita štadióna je približne 25 486 divákov,
+                    čo ho radí medzi stredne veľké štadióny v rámci Premier League. <br>
+                    Štadión je známy svojou elektrizujúcou atmosférou, najmä vďaka vášnivým priaznivcom Crystal Palace, ktorí na „Holmesdale Road Stand“
+                    vytvárajú jedinečnú podporu počas zápasov. Selhurst Park bol viackrát renovovaný a upravovaný, aby vyhovoval moderným požiadavkám a zároveň si zachoval svoj pôvodný charakter. <br>
+                    Hoci štadión čelí plánom na modernizáciu a rozšírenie, zachováva si historický vzhľad a autentickú futbalovú atmosféru, ktorú fanúšikovia milujú.
+                    Crystal Palace plánuje rozšíriť kapacitu a zlepšiť zariadenia štadióna, aby zodpovedal vyššej kvalite a komfortu pre priaznivcov klubu i návštevníkov. <br>
+                    Štadión zostal nedokončený až do roku 1969. Vtedy ale Crystal Palace po prvýkrát postúpil do Division One (vtedy najvyššej úrovne anglického futbalu). Bola postavená tribúna Arthura Waita,
+                    pomenovaná po dlhoročnom predsedovi klubu, ktorý bol remeselnícky stavbár a často ho bolo vidieť, ako sám na štadióne pracoval. <br>
+                    V roku 2018 klub oznámil rekonštrukciu Selhurst Parku v hodnote 100 miliónov libier, aby sa kvalitou priblížil modernému štadiónu akú si zaslúži klub hrajúci v Premier League.
+                    Selhurst Park sa taktiež objavil a používal v seriáli Apple TV+ Ted Lasso ako Nelson Road, fiktívny domáci štadión AFC Richmond. <br>
+                    Rekordná návštevnosť v Selhurst Parku bola zaznamenaná v roku 1979, keď 51 482 divákov videlo Crystal Palace poraziť Burnley 2:0. Crystal Palace vtedy vyhral majstrovský titul Football League Second Division.
+                </p>
+            </div>
+            <div class="col-md-6 stadion-obr">
+                <img src="{{ asset('pics/Selhurst-Park.JPG') }}" alt="Selhurst Park" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <section class="treneri container-fluid my-4">
+        <div class="row mx-2 gy-4">
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Trénerský tím pre sezónu 2024/25</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Oliver Glasner</td>
+                        <td>Hlavný Tréner</td>
+                    </tr>
+                    <tr>
+                        <td>Ronald Brunmayr</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Paddy McCarthy</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Emanuel Pogatetz</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Angerschmidt</td>
+                        <td>Tréner Štandartných situácií</td>
+                    </tr>
+                    <tr>
+                        <td>Dean Kiely</td>
+                        <td>Tréner Brankárov</td>
+                    </tr>
+                    <tr>
+                        <td>Darren Powell</td>
+                        <td>Tréner Akadémie</td>
+                    </tr>
+                    <tr>
+                        <td>Imtiaz Ahmad</td>
+                        <td>Hlavný Lekár</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Manažment Crystal Palace FC</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>John Textor</td>
+                        <td>Vlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Josh Harris</td>
+                        <td>Spoluvlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Noah Abrams</td>
+                        <td>Výlučný Podpredseda</td>
+                    </tr>
+                    <tr>
+                        <td>Dougie Freedman</td>
+                        <td>Riaditeľ Klubu</td>
+                    </tr>
+                    <tr>
+                        <td>Christine Dowdeswell</td>
+                        <td>Klubový sekretár</td>
+                    </tr>
+                    <tr>
+                        <td>Dougie Freedman</td>
+                        <td>Športový riaditeľ</td>
+                    </tr>
+                    <tr>
+                        <td>Phil Alexander</td>
+                        <td>Riaditeľ manažmentu</td>
+                    </tr>
+                    <tr>
+                        <td>Sean O'Loughlin</td>
+                        <td>Hlavný Manažer financií</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="uspechy">
     <div class="trofeje">
       <h1>Tituly Crystal Palace FC</h1>
       <h2>Domáce poháre</h2>

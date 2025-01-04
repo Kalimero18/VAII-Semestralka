@@ -109,112 +109,124 @@
         </div>
     </section>
 
-
-    <section class="stadion">
-        <div class="stadion-kontent">
-            <div class="stadion-txt">
-                <h1>Craven Cottage</h1>
-                <p> Craven Cottage je domovským štadiónom futbalového klubu Fulham FC, nachádza sa na brehu rieky Temža v západnom Londýne. Postavený bol v roku 1896 a od tej doby slúži ako sídlo Fulhamu,
+    <section class="stadion container-fluid py-4">
+        <div class="row align-items-center mx-2">
+            <div class="col-md-6 stadion-txt">
+                <h1 class="text-center">Craven Cottage</h1>
+                <p>
+                    Craven Cottage je domovským štadiónom futbalového klubu Fulham FC, nachádza sa na brehu rieky Temža v západnom Londýne. Postavený bol v roku 1896 a od tej doby slúži ako sídlo Fulhamu,
                     čo z neho robí jeden z najstarších aktívnych štadiónov v Anglicku. Craven Cottage má kapacitu približne 25 700 miest a je známy svojou klasickou architektúrou a špecifickou atmosférou. Jedným z jeho ikonických prvkov je *Cottage Pavilion*,
                     malý domček umiestnený v jednom rohu ihriska, ktorý slúžil ako hráčska šatňa a je unikátny pre tento štadión. <br>
                     Štadión prešiel viacerými renováciami, aby zodpovedal moderným bezpečnostným a komfortným štandardom, pričom nedávna rekonštrukcia Riverside Stand priblížila kapacitu bližšie k cieľovej hodnote
                     a poskytla nové výhľady na Temžu. Napriek modernizácii si Craven Cottage zachováva historický šarm a patrí medzi najcharakteristickejšie štadióny v anglickom futbale.
-                    Špecifická kombinácia tradičnej architektúry a moderných prvkov robí z Craven Cottage obľúbené miesto pre fanúšikov Fulhamu aj návštevníkov futbalových zápasov.
+                    Špecifická kombinácia tradičnej architektúry a moderných prvkov robí z Craven Cottage obľúbené miesto pre fanúšikov Fulhamu aj návštevníkov futbalových zápasov. <br>
                     Keď v roku 1989 došlo ku katastrofe v Hillsborough, Fulham bol na predposlednom mieste v The Football League (3. liga) a všetky miesta na štadióne boli len na státie. Ale na základe Taylorovej správy ambiciózny predseda
-                    Fulhamu Jimmy Hill predložil v roku 1996 plán štadiónu, kde budú všetky miesta na sedenie. Tieto plány sa nikdy neuskutočnili, čiastočne kvôli nátlaku miestnych obyvateľov, ktorí chceli na zápasoch naďalej stáť.
+                    Fulhamu Jimmy Hill predložil v roku 1996 plán štadiónu, kde budú všetky miesta na sedenie. Tieto plány sa nikdy neuskutočnili, čiastočne kvôli nátlaku miestnych obyvateľov, ktorí chceli na zápasoch naďalej stáť. <br>
                     V čase, keď sa Fulham dostal do Premier League, mal stále na štadióne len miesta na státie - v tej dobe to už bolo prakticky neslýchané.
                     V decembri 2003 boli predstavené plány na veľkú rekonštrukciu v hodnote 8 miliónov libier, aby bola v súlade s požiadavkami Premier League.
                 </p>
             </div>
-            <div class="stadion-obr">
-                <img src="{{ asset('pics/Craven-cottage.jpg') }}" alt="Craven Cottage">
+            <div class="col-md-6 stadion-obr">
+                <img src="{{ asset('pics/Craven-cottage.jpg') }}" alt="Craven Cottage" class="img-fluid rounded">
             </div>
         </div>
     </section>
-    <section class="treneri">
-        <div class="tabulka-kontainer">
-            <h1>Trénerský tím pre sezónu 2024/25</h1>
-            <table>
-                <tr>
-                    <th>Meno, Priezvisko</th>
-                    <th>Pozícia/Špecializácia</th>
-                </tr>
-                <tr>
-                    <td>Marco Silva</td>
-                    <td>Hlavný Tréner</td>
-                </tr>
-                <tr>
-                    <td>Stuart Gray</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Goncalo Pedro</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Antonios Lemonakis</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Antonios Lemonakis</td>
-                    <td>Tréner Štandartných situácií</td>
-                </tr>
-                <tr>
-                    <td>Hugo Olivieira</td>
-                    <td>Tréner Brankárov</td>
-                </tr>
-                <tr>
-                    <td>Mike Cave</td>
-                    <td>Tréner Akadémie</td>
-                </tr>
-                <tr>
-                    <td>Chris Hanson</td>
-                    <td>Hlavný Lekár</td>
-                </tr>
-            </table>
-        </div>
-        <div class="tabulka-kontainer">
-            <h1>Manažment Fulhamu FC</h1>
-            <table>
-                <tr>
-                    <th>Meno, Priezvisko</th>
-                    <th>Pozícia/Špecializácia</th>
-                </tr>
-                <tr>
-                    <td>Shahid Khan</td>
-                    <td>Vlastník</td>
-                </tr>
-                <tr>
-                    <td>Alistair Mackintosh</td>
-                    <td>Spoluvlastník</td>
-                </tr>
-                <tr>
-                    <td>Tony Khan</td>
-                    <td>Výlučný Podpredseda</td>
-                </tr>
-                <tr>
-                    <td>Alistair Mackintosh</td>
-                    <td>Riaditeľ Klubu</td>
-                </tr>
-                <tr>
-                    <td>Darren Preston</td>
-                    <td>Klubový sekretár</td>
-                </tr>
-                <tr>
-                    <td>Tony Khan</td>
-                    <td>Športový riaditeľ</td>
-                </tr>
-                <tr>
-                    <td>Mark Lamping</td>
-                    <td>Riaditeľ manažmentu</td>
-                </tr>
-                <tr>
-                    <td>Sean O'Loughlin</td>
-                    <td>Hlavný Manažer financií</td>
-                </tr>
-            </table>
+
+    <section class="treneri container-fluid my-4">
+        <div class="row mx-2 gy-4">
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Trénerský tím pre sezónu 2024/25</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Marco Silva</td>
+                        <td>Hlavný Tréner</td>
+                    </tr>
+                    <tr>
+                        <td>Stuart Gray</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Goncalo Pedro</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Antonios Lemonakis</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Antonios Lemonakis</td>
+                        <td>Tréner Štandartných situácií</td>
+                    </tr>
+                    <tr>
+                        <td>Hugo Olivieira</td>
+                        <td>Tréner Brankárov</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Cave</td>
+                        <td>Tréner Akadémie</td>
+                    </tr>
+                    <tr>
+                        <td>Chris Hanson</td>
+                        <td>Hlavný Lekár</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Manažment Fulhamu FC</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Shahid Khan</td>
+                        <td>Vlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Alistair Mackintosh</td>
+                        <td>Spoluvlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Tony Khan</td>
+                        <td>Výlučný Podpredseda</td>
+                    </tr>
+                    <tr>
+                        <td>Alistair Mackintosh</td>
+                        <td>Riaditeľ Klubu</td>
+                    </tr>
+                    <tr>
+                        <td>Darren Preston</td>
+                        <td>Klubový sekretár</td>
+                    </tr>
+                    <tr>
+                        <td>Tony Khan</td>
+                        <td>Športový riaditeľ</td>
+                    </tr>
+                    <tr>
+                        <td>Mark Lamping</td>
+                        <td>Riaditeľ manažmentu</td>
+                    </tr>
+                    <tr>
+                        <td>Sean O'Loughlin</td>
+                        <td>Hlavný Manažer financií</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
+
     <section class="uspechy">
         <div class="trofeje">
             <h1>Tituly Fulhamu FC</h1>

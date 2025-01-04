@@ -235,7 +235,6 @@
         </div>
     </section>
 
-
     <section class="uspechy py-4">
         <div class="container-fluid ">
             <div class="row mx-2">

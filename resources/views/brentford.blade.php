@@ -111,116 +111,127 @@
         </div>
     </section>
 
+    <section class="stadion container-fluid py-4">
+        <div class="row align-items-center mx-2">
+            <div class="col-md-6 stadion-txt">
+                <h1 class="text-center">Brentford Community Stadium</h1>
+                <p>
+                    Brentford Community Stadium, známy aj pod názvom Gtech Community Stadium (kvôli sponzorstvu), je moderný štadión nachádzajúci sa v londýnskej štvrti Hounslow.
+                    Bol otvorený v septembri 2020 a slúži ako domovský stánok futbalového klubu Brentford FC. Štadión má kapacitu 17 250 divákov
+                    a je prispôsobený na organizovanie futbalových aj rugbyových zápasov, pričom ho využíva aj tím London Irish RFC pre zápasy rugby. <br>
+                    Štadión je vybavený modernými technológiami a zariadeniami, vrátane komfortných sedadiel a kvalitných hospitality služieb pre divákov.
+                    Nachádza sa v blízkosti železničnej stanice Kew Bridge, čo zabezpečuje jednoduchý prístup pre fanúšikov cestujúcich verejnou dopravou. <br>
+                    Brentford Community Stadium nahradil ikonický Griffin Park, kde Brentford FC hrával viac ako sto rokov.
+                    Tento štadión predstavuje pre klub novú kapitolu a symbol ich ambícií v najvyššej anglickej lige, Premier League. <br>
+                    Plán klubu presťahovať sa na nový štadión vznikol už v roku 2007, ale obrovský krok vpred nastal až keď 28. júna 2012 klub kúpil pozemok o výmere 31 000 m²
+                    na Lionel Road v Brentforde od spoločnosti Barratt Homes, ktorá pôvodne získala pozemok v januári 2008.
+                    Cieľom klubu bolo postaviť na pozemku štadión s kapacitou 20 000 divákov včas pred začiatkom sezóny 2016/2017 s možnosťou rozšírenia štadióna na 25 000 miest. <br>
+                    Práce na novom štadióne sa oficiálne začali 24. marca 2017 kolaudáciou a prípravnými prácami. Hlavné práce sa začali na jar 2018.
+                    30. augusta 2020 Brentford potvrdil, že štadión je dokončený a pripravený na usporiadanie futbalových zápasov.
+                </p>
+            </div>
+            <div class="col-md-6 stadion-obr">
+                <img src="{{ asset('pics/Brentford-stadium.jpg') }}" alt="Brentford Community Stadium" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
 
-    <section class="stadion">
-    <div class="stadion-kontent">
-      <div class="stadion-txt">
-        <h1>Brentford Community Stadium</h1>
-        <p>
-          Brentford Community Stadium, známy aj pod názvom Gtech Community Stadium (kvôli sponzorstvu), je moderný štadión nachádzajúci sa v londýnskej štvrti Hounslow.
-          Bol otvorený v septembri 2020 a slúži ako domovský stánok futbalového klubu Brentford FC. Štadión má kapacitu 17 250 divákov
-          a je prispôsobený na organizovanie futbalových aj rugbyových zápasov, pričom ho využíva aj tím London Irish RFC pre zápasy rugby. <br>
-          Štadión je vybavený modernými technológiami a zariadeniami, vrátane komfortných sedadiel a kvalitných hospitality služieb pre divákov.
-          Nachádza sa v blízkosti železničnej stanice Kew Bridge, čo zabezpečuje jednoduchý prístup pre fanúšikov cestujúcich verejnou dopravou. <br>
-          Brentford Community Stadium nahradil ikonický Griffin Park, kde Brentford FC hrával viac ako sto rokov.
-          Tento štadión predstavuje pre klub novú kapitolu a symbol ich ambícií v najvyššej anglickej lige, Premier League. <br>
-          Plán klubu presťahovať sa na nový štadión vznikol už v roku 2007, ale obrovský krok vpred nastal až keď 28. júna 2012 klub kúpil pozemok o výmere 31 000 m²
-          na Lionel Road v Brentforde od spoločnosti Barratt Homes, ktorá pôvodne získala pozemok v januári 2008.
-          Cieľom klubu bolo postaviť na pozemku štadión s kapacitou 20 000 divákov včas pred začiatkom sezóny 2016/2017 s možnosťou rozšírenia štadióna na 25 000 miest. <br>
-          Práce na novom štadióne sa oficiálne začali 24. marca 2017 kolaudáciou a prípravnými prácami. Hlavné práce sa začali na jar 2018.
-          30. augusta 2020 Brentford potvrdil, že štadión je dokončený a pripravený na usporiadanie futbalových zápasov.
-        </p>
-      </div>
-      <div class="stadion-obr">
-        <img src="{{ asset('pics/Brentford-stadium.jpg') }}" alt="Brentford Community Stadium">
-      </div>
-    </div>
-  </section>
-  <section class="treneri">
-    <div class="tabulka-kontainer">
-      <h1>Trénerský tím pre sezónu 2024/25</h1>
-      <table>
-        <tr>
-          <th>Meno, Priezvisko</th>
-          <th>Pozícia/Špecializácia</th>
-        </tr>
-        <tr>
-          <td>Thomas Frank</td>
-          <td>Hlavný Tréner</td>
-        </tr>
-        <tr>
-          <td>Claus Norgaard</td>
-          <td>Asistent Trénera</td>
-        </tr>
-        <tr>
-          <td>Justin Cochrane</td>
-          <td>Asistent Trénera</td>
-        </tr>
-        <tr>
-          <td>Kevin O'Connor</td>
-          <td>Asistent Trénera</td>
-        </tr>
-        <tr>
-          <td>Keith Andrews</td>
-          <td>Tréner Štandartných situácií</td>
-        </tr>
-        <tr>
-          <td>Manu Sotelo</td>
-          <td>Tréner Brankárov</td>
-        </tr>
-        <tr>
-          <td>Neil MacFarlain</td>
-          <td>Tréner Akadémie</td>
-        </tr>
-        <tr>
-          <td>Naheem S. Ali</td>
-          <td>Hlavný Lekár</td>
-        </tr>
-      </table>
-    </div>
-    <div class="tabulka-kontainer">
-      <h1>Manažment Brentfordu FC</h1>
-      <table>
-        <tr>
-          <th>Meno, Priezvisko</th>
-          <th>Pozícia/Špecializácia</th>
-        </tr>
-        <tr>
-          <td>Matthew Benham</td>
-          <td>Vlastník</td>
-        </tr>
-        <tr>
-          <td>Cliff Crown</td>
-          <td>Spoluvlastník</td>
-        </tr>
-        <tr>
-          <td>Jon Varney</td>
-          <td>Výlučný Podpredseda</td>
-        </tr>
-        <tr>
-          <td>Deji Davies</td>
-          <td>Riaditeľ Klubu</td>
-        </tr>
-        <tr>
-          <td>Lisa Skelhorn</td>
-          <td>Klubový sekretár</td>
-        </tr>
-        <tr>
-          <td>Phil Giles</td>
-          <td>Športový riaditeľ</td>
-        </tr>
-        <tr>
-          <td>Gary Hooper</td>
-          <td>Riaditeľ manažmentu</td>
-        </tr>
-        <tr>
-          <td>David Joyes</td>
-          <td>Hlavný Manažer financií</td>
-        </tr>
-      </table>
-    </div>
-  </section>
-  <section class="uspechy">
+    <section class="treneri container-fluid my-4">
+        <div class="row mx-2 gy-4">
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Trénerský tím pre sezónu 2024/25</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Thomas Frank</td>
+                        <td>Hlavný Tréner</td>
+                    </tr>
+                    <tr>
+                        <td>Claus Norgaard</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Justin Cochrane</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Kevin O'Connor</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Keith Andrews</td>
+                        <td>Tréner Štandartných situácií</td>
+                    </tr>
+                    <tr>
+                        <td>Manu Sotelo</td>
+                        <td>Tréner Brankárov</td>
+                    </tr>
+                    <tr>
+                        <td>Neil MacFarlain</td>
+                        <td>Tréner Akadémie</td>
+                    </tr>
+                    <tr>
+                        <td>Naheem S. Ali</td>
+                        <td>Hlavný Lekár</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Manažment Brentfordu FC</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Matthew Benham</td>
+                        <td>Vlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Cliff Crown</td>
+                        <td>Spoluvlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Jon Varney</td>
+                        <td>Výlučný Podpredseda</td>
+                    </tr>
+                    <tr>
+                        <td>Deji Davies</td>
+                        <td>Riaditeľ Klubu</td>
+                    </tr>
+                    <tr>
+                        <td>Lisa Skelhorn</td>
+                        <td>Klubový sekretár</td>
+                    </tr>
+                    <tr>
+                        <td>Phil Giles</td>
+                        <td>Športový riaditeľ</td>
+                    </tr>
+                    <tr>
+                        <td>Gary Hooper</td>
+                        <td>Riaditeľ manažmentu</td>
+                    </tr>
+                    <tr>
+                        <td>David Joyes</td>
+                        <td>Hlavný Manažer financií</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="uspechy">
     <div class="trofeje">
       <h1>Tituly Brentfordu FC</h1>
       <h2>Domáce poháre</h2>

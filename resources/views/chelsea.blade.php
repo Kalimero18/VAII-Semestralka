@@ -118,115 +118,127 @@
         </div>
     </section>
 
-    <section class="stadion">
-        <div class="stadion-kontent">
-            <div class="stadion-txt">
-                <h1>Stamford Bridge</h1>
-                <p>
-                    Stamford Bridge, domov futbalového klubu Chelsea FC, je jedným z najikonickejších štadiónov v anglickom futbale.
-                    Otvorený bol už v roku 1877, pôvodne ako atletický štadión, ale až v roku 1905 sa stal domovským stánkom Chelsea FC, keď bol klub založený. Nachádza sa v Fulhame, na juhozápade Londýna. <br>
-                    Stamford Bridge bol počas svojej histórie niekoľkokrát renovovaný, pričom jeho súčasná kapacita dosahuje približne 40 834 miest, čo z neho robí jeden z menších štadiónov medzi elitnými anglickými klubmi.
-                    Napriek tomu si zachováva autentickú atmosféru a je známy pre intenzívne a vášnivé domáce publikum. <br>
-                    Jednou z výnimočných čŕt štadióna je jeho poloha – je zasadený priamo do hustej londýnskej zástavby, čo dodáva návštevníkom pocit, že sú v centre mesta, no zároveň v srdci futbalového diania.
-                    Stamford Bridge prešiel viacerými fázami modernizácie, vrátane prestavby hlavných tribún, aby poskytoval najmodernejšie zariadenia, no pritom si zachoval časť svojho tradičného charakteru. <br>
-                    V minulosti bol Stamford Bridge miestom mnohých významných futbalových udalostí, nielen zápasov Chelsea FC, ale aj iných súťaží, ako finále FA Cupu či európske súťaže.
-                    Hoci klub plánoval v minulosti ďalšiu expanziu štadióna, z dôvodu komplikácií bol tento projekt zatiaľ odložený. <br>
-                    Štadión nie je len miestom futbalových zápasov, ale aj symbolom bohatých dejín Chelsea FC, ktoré siahajú viac ako jedno storočie dozadu, s množstvom trofejí a slávnych okamihov. <br>
-                    Jednou z najzaujímavejších zaujímavostí o Stamford Bridge je jeho pôvodné využitie. Štadión, ktorý je dnes domovom Chelsea FC, bol pôvodne otvorený v roku 1877 a používaný ako atletická dráha.
-                    Až v roku 1905, po založení Chelsea FC, sa štadión začal využívať na futbalové účely. Stamford Bridge je tiež známy svojimi bohatými dejinami a umiestnením – štadión sa nachádza v blízkosti rieky Temža,
-                    čo z neho robí jednu z najikonickejších športových lokalít v Londýne.
-                </p>
+        <section class="stadion container-fluid py-4">
+            <div class="row align-items-center mx-2">
+                <div class="col-md-6 stadion-txt">
+                    <h1 class="text-center">Stamford Bridge</h1>
+                    <p>
+                        Stamford Bridge, domov futbalového klubu Chelsea FC, je jedným z najikonickejších štadiónov v anglickom futbale.
+                        Otvorený bol už v roku 1877, pôvodne ako atletický štadión, ale až v roku 1905 sa stal domovským stánkom Chelsea FC, keď bol klub založený. Nachádza sa v Fulhame, na juhozápade Londýna. <br>
+                        Stamford Bridge bol počas svojej histórie niekoľkokrát renovovaný, pričom jeho súčasná kapacita dosahuje približne 40 834 miest, čo z neho robí jeden z menších štadiónov medzi elitnými anglickými klubmi.
+                        Napriek tomu si zachováva autentickú atmosféru a je známy pre intenzívne a vášnivé domáce publikum. <br>
+                        Jednou z výnimočných čŕt štadióna je jeho poloha – je zasadený priamo do hustej londýnskej zástavby, čo dodáva návštevníkom pocit, že sú v centre mesta, no zároveň v srdci futbalového diania.
+                        Stamford Bridge prešiel viacerými fázami modernizácie, vrátane prestavby hlavných tribún, aby poskytoval najmodernejšie zariadenia, no pritom si zachoval časť svojho tradičného charakteru. <br>
+                        V minulosti bol Stamford Bridge miestom mnohých významných futbalových udalostí, nielen zápasov Chelsea FC, ale aj iných súťaží, ako finále FA Cupu či európske súťaže.
+                        Hoci klub plánoval v minulosti ďalšiu expanziu štadióna, z dôvodu komplikácií bol tento projekt zatiaľ odložený. <br>
+                        Štadión nie je len miestom futbalových zápasov, ale aj symbolom bohatých dejín Chelsea FC, ktoré siahajú viac ako jedno storočie dozadu, s množstvom trofejí a slávnych okamihov. <br>
+                        Jednou z najzaujímavejších zaujímavostí o Stamford Bridge je jeho pôvodné využitie. Štadión, ktorý je dnes domovom Chelsea FC, bol pôvodne otvorený v roku 1877 a používaný ako atletická dráha.
+                        Až v roku 1905, po založení Chelsea FC, sa štadión začal využívať na futbalové účely. Stamford Bridge je tiež známy svojimi bohatými dejinami a umiestnením – štadión sa nachádza v blízkosti rieky Temža,
+                        čo z neho robí jednu z najikonickejších športových lokalít v Londýne.
+                    </p>
+                </div>
+                <div class="col-md-6 stadion-obr">
+                    <img src="{{ asset('pics/Stamford-Bridge.jpg') }}" alt="Stamford Bridge" class="img-fluid rounded">
+                </div>
             </div>
-            <div class="stadion-obr">
-                <img src="{{ asset('pics/Stamford-Bridge.jpg') }}" alt="Stamford Bridge">
+        </section>
+
+        <section class="treneri container-fluid my-4">
+            <div class="row mx-2 gy-4">
+                <div class="col-md-6 tabulka-kontainer">
+                    <h1 class="text-center">Trénerský tím pre sezónu 2024/25</h1>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th>Meno, Priezvisko</th>
+                            <th>Pozícia/Špecializácia</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Enzo Maresca</td>
+                            <td>Hlavný Tréner</td>
+                        </tr>
+                        <tr>
+                            <td>Willy Caballero</td>
+                            <td>Asistent Trénera</td>
+                        </tr>
+                        <tr>
+                            <td>Roberto Vitello</td>
+                            <td>Asistent Trénera</td>
+                        </tr>
+                        <tr>
+                            <td>Danny Walker</td>
+                            <td>Asistent Trénera</td>
+                        </tr>
+                        <tr>
+                            <td>Bernardo Cueva</td>
+                            <td>Tréner Štandartných situácií</td>
+                        </tr>
+                        <tr>
+                            <td>Michele de Bernardin</td>
+                            <td>Tréner Brankárov</td>
+                        </tr>
+                        <tr>
+                            <td>Filipe Coelho</td>
+                            <td>Tréner Akadémie</td>
+                        </tr>
+                        <tr>
+                            <td>Eva Carniero</td>
+                            <td>Hlavný Lekár</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 tabulka-kontainer">
+                    <h1 class="text-center">Manažment Chelsea FC</h1>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th>Meno, Priezvisko</th>
+                            <th>Pozícia/Špecializácia</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Todd Boehly</td>
+                            <td>Vlastník</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Reeves</td>
+                            <td>Spoluvlastník</td>
+                        </tr>
+                        <tr>
+                            <td>Jason Gannon</td>
+                            <td>Výlučný Podpredseda</td>
+                        </tr>
+                        <tr>
+                            <td>Chris Jurasek</td>
+                            <td>Riaditeľ Klubu</td>
+                        </tr>
+                        <tr>
+                            <td>Alan Shaw</td>
+                            <td>Klubový sekretár</td>
+                        </tr>
+                        <tr>
+                            <td>Paul Winstanley</td>
+                            <td>Športový riaditeľ</td>
+                        </tr>
+                        <tr>
+                            <td>Laurence Steward</td>
+                            <td>Riaditeľ manažmentu</td>
+                        </tr>
+                        <tr>
+                            <td>Adriel Lares</td>
+                            <td>Hlavný Manažer financií</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="treneri">
-        <div class="tabulka-kontainer">
-            <h1>Trénerský tím pre sezónu 2024/25</h1>
-            <table>
-                <tr>
-                    <th>Meno, Priezvisko</th>
-                    <th>Pozícia/Špecializácia</th>
-                </tr>
-                <tr>
-                    <td>Enzo Maresca</td>
-                    <td>Hlavný Tréner</td>
-                </tr>
-                <tr>
-                    <td>Willy Caballero</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Roberto Vitello</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Danny Walker</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Bernardo Cueva</td>
-                    <td>Tréner Štandartných situácií</td>
-                </tr>
-                <tr>
-                    <td>Michele de Bernardin</td>
-                    <td>Tréner Brankárov</td>
-                </tr>
-                <tr>
-                    <td>Filipe Coelho</td>
-                    <td>Tréner Akadémie</td>
-                </tr>
-                <tr>
-                    <td>Eva Carniero</td>
-                    <td>Hlavný Lekár</td>
-                </tr>
-            </table>
-        </div>
-        <div class="tabulka-kontainer">
-            <h1>Manažment Chelsea FC</h1>
-            <table>
-                <tr>
-                    <th>Meno, Priezvisko</th>
-                    <th>Pozícia/Špecializácia</th>
-                </tr>
-                <tr>
-                    <td>Todd Boehly</td>
-                    <td>Vlastník</td>
-                </tr>
-                <tr>
-                    <td>Anthony Reeves</td>
-                    <td>Spoluvlastník</td>
-                </tr>
-                <tr>
-                    <td>Jason Gannon</td>
-                    <td>Výlučný Podpredseda</td>
-                </tr>
-                <tr>
-                    <td>Chris Jurasek</td>
-                    <td>Riaditeľ Klubu</td>
-                </tr>
-                <tr>
-                    <td>Alan Shaw</td>
-                    <td>Klubový sekretár</td>
-                </tr>
-                <tr>
-                    <td>Paul Winstanley</td>
-                    <td>Športový riaditeľ</td>
-                </tr>
-                <tr>
-                    <td>Laurence Steward</td>
-                    <td>Riaditeľ manažmentu</td>
-                </tr>
-                <tr>
-                    <td>Adriel Lares</td>
-                    <td>Hlavný Manažer financií</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-    <section class="uspechy">
+        </section>
+
+        <section class="uspechy">
         <div class="trofeje">
             <h1>Tituly Chelsea FC</h1>
             <h2>Domáce poháre</h2>

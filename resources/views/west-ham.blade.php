@@ -116,11 +116,12 @@
         </div>
     </section>
 
-    <section class="stadion">
-        <div class="stadion-kontent">
-            <div class="stadion-txt">
-                <h1>London Stadium</h1>
-                <p> London Stadium, známy aj ako bývalý Olympijský štadión, je moderné multifunkčné športové zariadenie v štvrti Stratford vo východnom Londýne.
+    <section class="stadion container-fluid py-4">
+        <div class="row align-items-center mx-2">
+            <div class="col-md-6 stadion-txt">
+                <h1 class="text-center">London Stadium</h1>
+                <p>
+                    London Stadium, známy aj ako bývalý Olympijský štadión, je moderné multifunkčné športové zariadenie v štvrti Stratford vo východnom Londýne.
                     Bol postavený pre Letné olympijské hry 2012 a je dnes domovským štadiónom klubu West Ham United. Štadión má kapacitu približne 60 000 divákov, čo z neho robí jedného z najväčších športových objektov v Londýne a Anglicku. <br>
                     V roku 2016 prešiel štadión komplexnou prestavbou, aby sa z pôvodného atletického objektu stal plnohodnotný futbalový štadión. Táto rekonfigurácia zahŕňala úpravu sedenia a vytvorenie výsuvného trávnika,
                     čím sa zlepšila viditeľnosť a akustika pre fanúšikov. Štadión si však zachoval multifunkčnosť, takže môže hostiť aj atletické súťaže,
@@ -132,95 +133,107 @@
                     Zaujímavou súčasťou každého domáceho zápasu West Hamu United je tradícia, kedy pri nástupe a v úvodných minútach je vypustené množstvo bublín po celom štadióne.
                 </p>
             </div>
-            <div class="stadion-obr">
-                <img src="{{ asset('pics/London-Stadium.jpg') }}" alt="London Stadium">
+            <div class="col-md-6 stadion-obr">
+                <img src="{{ asset('pics/London-Stadium.jpg') }}" alt="London Stadium" class="img-fluid rounded">
             </div>
         </div>
     </section>
-    <section class="treneri">
-        <div class="tabulka-kontainer">
-            <h1>Trénerský tím pre sezónu 2024/25</h1>
-            <table>
-                <tr>
-                    <th>Meno, Priezvisko</th>
-                    <th>Pozícia/Špecializácia</th>
-                </tr>
-                <tr>
-                    <td>Julen Lopetegui</td>
-                    <td>Hlavný Tréner</td>
-                </tr>
-                <tr>
-                    <td>Pablo Sanz</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Oscar Caro</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Juan Vicente Peinado</td>
-                    <td>Asistent Trénera</td>
-                </tr>
-                <tr>
-                    <td>Oscar Caro</td>
-                    <td>Tréner Štandartných situácií</td>
-                </tr>
-                <tr>
-                    <td>Xavi Valero</td>
-                    <td>Tréner Brankárov</td>
-                </tr>
-                <tr>
-                    <td>Terry Westley</td>
-                    <td>Tréner Akadémie</td>
-                </tr>
-                <tr>
-                    <td>Ricahrd Collinge</td>
-                    <td>Hlavný Lekár</td>
-                </tr>
-            </table>
-        </div>
-        <div class="tabulka-kontainer">
-            <h1>Manažment West Hamu United FC</h1>
-            <table>
-                <tr>
-                    <th>Meno, Priezvisko</th>
-                    <th>Pozícia/Špecializácia</th>
-                </tr>
-                <tr>
-                    <td>David Sullivan</td>
-                    <td>Spoluvlastník</td>
-                </tr>
-                <tr>
-                    <td>Vanessa Gold</td>
-                    <td>Spoluvlastník</td>
-                </tr>
-                <tr>
-                    <td>Karren Brady</td>
-                    <td>Výlučný Podpredseda</td>
-                </tr>
-                <tr>
-                    <td>Daniel Křetinský</td>
-                    <td>Riaditeľ Klubu</td>
-                </tr>
-                <tr>
-                    <td>Andrew Pincher</td>
-                    <td>Klubový sekretár</td>
-                </tr>
-                <tr>
-                    <td>Mark Noble</td>
-                    <td>Športový riaditeľ</td>
-                </tr>
-                <tr>
-                    <td>Tony Carr</td>
-                    <td>Riaditeľ manažmentu</td>
-                </tr>
-                <tr>
-                    <td>Andy Mollett</td>
-                    <td>Hlavný Manažer financií</td>
-                </tr>
-            </table>
+
+    <section class="treneri container-fluid my-4">
+        <div class="row mx-2 gy-4">
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Trénerský tím pre sezónu 2024/25</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Julen Lopetegui</td>
+                        <td>Hlavný Tréner</td>
+                    </tr>
+                    <tr>
+                        <td>Pablo Sanz</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Oscar Caro</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Juan Vicente Peinado</td>
+                        <td>Asistent Trénera</td>
+                    </tr>
+                    <tr>
+                        <td>Oscar Caro</td>
+                        <td>Tréner Štandartných situácií</td>
+                    </tr>
+                    <tr>
+                        <td>Xavi Valero</td>
+                        <td>Tréner Brankárov</td>
+                    </tr>
+                    <tr>
+                        <td>Terry Westley</td>
+                        <td>Tréner Akadémie</td>
+                    </tr>
+                    <tr>
+                        <td>Ricahrd Collinge</td>
+                        <td>Hlavný Lekár</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 tabulka-kontainer">
+                <h1 class="text-center">Manažment West Hamu United FC</h1>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Meno, Priezvisko</th>
+                        <th>Pozícia/Špecializácia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>David Sullivan</td>
+                        <td>Spoluvlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Vanessa Gold</td>
+                        <td>Spoluvlastník</td>
+                    </tr>
+                    <tr>
+                        <td>Karren Brady</td>
+                        <td>Výlučný Podpredseda</td>
+                    </tr>
+                    <tr>
+                        <td>Daniel Křetinský</td>
+                        <td>Riaditeľ Klubu</td>
+                    </tr>
+                    <tr>
+                        <td>Andrew Pincher</td>
+                        <td>Klubový sekretár</td>
+                    </tr>
+                    <tr>
+                        <td>Mark Noble</td>
+                        <td>Športový riaditeľ</td>
+                    </tr>
+                    <tr>
+                        <td>Tony Carr</td>
+                        <td>Riaditeľ manažmentu</td>
+                    </tr>
+                    <tr>
+                        <td>Andy Mollett</td>
+                        <td>Hlavný Manažer financií</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
+
     <section class="uspechy">
         <div class="trofeje">
             <h1>Tituly West Hamu United FC</h1>
