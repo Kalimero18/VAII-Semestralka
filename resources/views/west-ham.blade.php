@@ -234,28 +234,43 @@
         </div>
     </section>
 
-    <section class="uspechy">
-        <div class="trofeje">
-            <h1>Tituly West Hamu United FC</h1>
-            <h2>Domáce poháre</h2>
-            <ul>
-                <li>EFL Championship: 2 (1957–58, 1980–81) </li>
-                <li>Emirates FA Cup: 3 (1963–64, 1974–75, 1979–80)</li>
-                <li>FA Community Shield: 1 (1964)</li>
-            </ul>
-            <h2>Medzinárodné poháre</h2>
-            <ul>
-                <li>UEFA Conference League: 1 (2022-23)</li>
-                <li>UEFA Cup Winners' Cup: 1 (1964-65)</li>
-            </ul>
-                <p>West Ham United väčšinou nepatrí medzi úplnú špičku anglickej ligy, ale nedá sa považovať ani za priemerný klub. <br>
-                    Toto sa potvrdilo v sezóne 2022-23, kedy si nielen zahrali európsku súťaž a to konktrétne Konferenčnú ligu, <br>
-                    čo je 3. najvyššia súťaž v európe, ale dokonca aj zvíťazili vo finále proti talianskému Laziu Rím.</p>
-        </div>
-        <div class="trofeje-obr">
-            <img src="{{ asset('pics/West-ham-trofej.jpg') }}" alt="West Ham trofej">
-            <p>Kapitán Declan Rice dvíha trofej Konferenčnej Ligy UEFA</p>
+    <section class="uspechy py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <!-- Textová časť -->
+                <div class="trofeje col-lg-8 mb-4">
+                    <div class="p-3">
+                        <h1>Tituly West Hamu United FC</h1>
+                        <h2>Domáce poháre</h2>
+                        <ul>
+                            <li>EFL Championship: 2 (1957–58, 1980–81)</li>
+                            <li>Emirates FA Cup: 3 (1963–64, 1974–75, 1979–80)</li>
+                            <li>FA Community Shield: 1 (1964)</li>
+                        </ul>
+                        <h2>Medzinárodné poháre</h2>
+                        <ul>
+                            <li>UEFA Conference League: 1 (2022–23)</li>
+                            <li>UEFA Cup Winners' Cup: 1 (1964–65)</li>
+                        </ul>
+                        <p>
+                            West Ham United väčšinou nepatrí medzi úplnú špičku anglickej ligy, ale nedá sa považovať ani za priemerný klub. <br>
+                            Toto sa potvrdilo v sezóne 2022–23, kedy si nielen zahrali európsku súťaž, konkrétne Konferenčnú ligu, <br>
+                            čo je 3. najvyššia súťaž v Európe, ale dokonca aj zvíťazili vo finále proti talianskemu Laziu Rím.
+                        </p>
+                    </div>
+                </div>
+                <!-- Obrázková časť -->
+                <div class="trofeje-obr col-lg-4">
+                    <div class="text-center mb-2">
+                        <img src="{{ asset('pics/West-ham-trofej.jpg') }}" alt="West Ham trofej" class="img-fluid rounded">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Kapitán Declan Rice dvíha trofej Konferenčnej Ligy UEFA</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 </div>
 @endsection

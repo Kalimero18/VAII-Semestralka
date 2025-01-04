@@ -227,23 +227,38 @@
         </div>
     </section>
 
-    <section class="uspechy">
-        <div class="trofeje">
-            <h1>Tituly Fulhamu FC</h1>
-            <h2>Domáce poháre</h2>
-            <ul>
-                <li>EFL Championship: 3 (1948–49, 2000–01, 2021–22) </li>
-                <li>EFL League One: 2 (1931–32, 1998–99)</li>
-            </ul>
-            <h2>Medzinárodné poháre</h2>
-                <p>Fulhamu FC sa podarilo kvalifikovať párkrát do druhej najvyššej európskej súťaže UEFA Europa League, naposledy v sezóne 2009-10. <br>
-                    V tejto sezóne sa dokonca prebojovali až do finále, kde však prehrali so španielským veľkoklubom Atlético Madrid. <br>
-                    Pre "priemerný" tím z anglickej ligy bol toto však najväčší medzinárodný úspech, na ktorý môžu byť napriek prehre veľmi hrdí.</p>
-        </div>
-        <div class="trofeje-obr">
-            <img src="{{ asset('pics/Fulham-trofej.jpg') }}" alt="Fulham trofej">
-            <p>Hráči Fulhamu oslavujú postup do Premier League</p>
+    <section class="uspechy py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <!-- Textová časť -->
+                <div class="trofeje col-lg-8 mb-4">
+                    <div class="p-3">
+                        <h1>Tituly Fulhamu FC</h1>
+                        <h2>Domáce poháre</h2>
+                        <ul>
+                            <li>EFL Championship: 3 (1948–49, 2000–01, 2021–22) </li>
+                            <li>EFL League One: 2 (1931–32, 1998–99)</li>
+                        </ul>
+                        <h2>Medzinárodné poháre</h2>
+                        <p>
+                            Fulhamu FC sa podarilo kvalifikovať párkrát do druhej najvyššej európskej súťaže UEFA Europa League, naposledy v sezóne 2009-10. <br>
+                            V tejto sezóne sa dokonca prebojovali až do finále, kde však prehrali so španielským veľkoklubom Atlético Madrid. <br>
+                            Pre "priemerný" tím z anglickej ligy bol toto však najväčší medzinárodný úspech, na ktorý môžu byť napriek prehre veľmi hrdí.
+                        </p>
+                    </div>
+                </div>
+                <!-- Obrázková časť -->
+                <div class="trofeje-obr col-lg-4">
+                    <div class="text-center mb-2">
+                        <img src="{{ asset('pics/Fulham-trofej.jpg') }}" alt="Fulham trofej" class="img-fluid rounded">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Hráči Fulhamu oslavujú postup do Premier League</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 </div>
 @endsection

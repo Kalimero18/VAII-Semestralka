@@ -232,28 +232,43 @@
         </div>
     </section>
 
-    <section class="uspechy">
-        <div class="trofeje">
-            <h1>Tituly Tottenhamu Hotspur FC</h1>
-            <h2>Domáce poháre</h2>
-            <ul>
-                <li>Premier League: 2 (1950–51, 1960–61)</li>
-                <li>Emirates FA Cup: 8 (1900–01, 1920–21, 1960–61, 1961–62, 1966–67, 1980–81, 1981–82, 1990–91)</li>
-                <li>Carabao Cup: 4 (1970–71, 1972–73, 1998–99, 2007–08) </li>
-                <li>FA Community Shield: 4 (1970–71, 1972–73, 1998–99, 2007–08) </li>
-            </ul>
-            <h2>Medzinárodné poháre</h2>
-            <ul>
-                <li>UEFA Europa League: 2 (1971–72, 1983–84)</li>
-                <li>UEFA Cup Winners' Cup: 1 (1962-63)</li>
-            </ul>
-                <p>Tottenhamu sa podarilo prebojovať do filáne najvyššej európskej súťaže UEFA Champions League v sezóne 2018-19. <br>
-                    Po neuveriteľnóm obrate v semifinále proti Ajaxu Amsterdam však podľahli vo finále proti Liverpoolu FC s výsledkom 0:2.</p>
-        </div>
-        <div class="trofeje-obr">
-            <img src="{{ asset('pics/Tottenham-trofej.jpg') }}" alt="Tottenham trofej">
-            <p>Hráči Tottenhamu oslavujú triumf v Carabao Cupe</p>
+    <section class="uspechy py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <!-- Textová časť -->
+                <div class="trofeje col-lg-8 mb-4">
+                    <div class="p-3">
+                        <h1>Tituly Tottenhamu Hotspur FC</h1>
+                        <h2>Domáce poháre</h2>
+                        <ul>
+                            <li>Premier League: 2 (1950–51, 1960–61)</li>
+                            <li>Emirates FA Cup: 8 (1900–01, 1920–21, 1960–61, 1961–62, 1966–67, 1980–81, 1981–82, 1990–91)</li>
+                            <li>Carabao Cup: 4 (1970–71, 1972–73, 1998–99, 2007–08)</li>
+                            <li>FA Community Shield: 4 (1970–71, 1972–73, 1998–99, 2007–08)</li>
+                        </ul>
+                        <h2>Medzinárodné poháre</h2>
+                        <ul>
+                            <li>UEFA Europa League: 2 (1971–72, 1983–84)</li>
+                            <li>UEFA Cup Winners' Cup: 1 (1962–63)</li>
+                        </ul>
+                        <p>
+                            Tottenhamu sa podarilo prebojovať do finále najvyššej európskej súťaže UEFA Champions League v sezóne 2018–19. <br>
+                            Po neuveriteľnom obrate v semifinále proti Ajaxu Amsterdam však podľahli vo finále proti Liverpoolu FC s výsledkom 0:2.
+                        </p>
+                    </div>
+                </div>
+                <!-- Obrázková časť -->
+                <div class="trofeje-obr col-lg-4">
+                    <div class="text-center mb-2">
+                        <img src="{{ asset('pics/Tottenham-trofej.jpg') }}" alt="Tottenham trofej" class="img-fluid rounded">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Hráči Tottenhamu oslavujú triumf v Carabao Cupe</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 </div>
 @endsection

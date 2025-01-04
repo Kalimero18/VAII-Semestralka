@@ -231,24 +231,37 @@
         </div>
     </section>
 
-    <section class="uspechy">
-    <div class="trofeje">
-      <h1>Tituly Brentfordu FC</h1>
-      <h2>Domáce poháre</h2>
-      <ul>
-        <li>EFL Championship: 1 (1934-35), 2021 Víťazi playoff - postup do Premier League.</li>
-        <li>EFL League One: 3 (1932-33, 1991-92, 2013-14)</li>
-        <li>EFL League Two: 5 (1963-64, 1971-72, 1977-78, 1998-99, 2008-09)</li>
-      </ul>
-      <h2>Medzinárodné poháre</h2>
-        <p>Keďže Brentford FC postúpil do najvyššej súťaže anglickej Premier League len nedávno, nemal ešte príležitosť kvalifikovať sa do Európskych súťaží. <br>
-          Na to aby klub mohol hrať Európske súťaže musí skončiť na top 8 miestach najvyššej ligy, alebo vyhrať FA Cup. 1.-4. miesto postupuje do Uefa Champions League, <br>
-          5. a 6. do UEFA Europa League, 7. a 8. do UEFA Conference League, víťaz FA Cupu postupuje do UEFA Europa League.</p>
-    </div>
-    <div class="trofeje-obr">
-      <img src="{{ asset('pics/Brentford-trofej.jpg') }}" alt="Brentford Trofej">
-      <p>Kapitán a Tréner Brentfordu s trofejou EFL League One</p>
-    </div>
-  </section>
+    <section class="uspechy py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <!-- Textová časť -->
+                <div class="trofeje col-lg-8 mb-4">
+                    <div class="p-3">
+                        <h1>Tituly Brentfordu FC</h1>
+                        <h2>Domáce poháre</h2>
+                        <ul>
+                            <li>EFL Championship: 1 (1934-35), 2021 Víťazi playoff - postup do Premier League.</li>
+                            <li>EFL League One: 3 (1932-33, 1991-92, 2013-14)</li>
+                            <li>EFL League Two: 5 (1963-64, 1971-72, 1977-78, 1998-99, 2008-09)</li>
+                        </ul>
+                        <h2>Medzinárodné poháre</h2>
+                        <p>Keďže Brentford FC postúpil do najvyššej súťaže anglickej Premier League len nedávno, nemal ešte príležitosť kvalifikovať sa do Európskych súťaží. <br>
+                            Na to aby klub mohol hrať Európske súťaže musí skončiť na top 8 miestach najvyššej ligy, alebo vyhrať FA Cup. 1.-4. miesto postupuje do Uefa Champions League, <br>
+                            5. a 6. do UEFA Europa League, 7. a 8. do UEFA Conference League, víťaz FA Cupu postupuje do UEFA Europa League.</p>
+                    </div>
+                </div>
+                <!-- Obrázková časť -->
+                <div class="trofeje-obr col-lg-4">
+                    <div class="text-center mb-2">
+                        <img src="{{ asset('pics/Brentford-trofej.jpg') }}" alt="Brentford Trofej" class="img-fluid rounded">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Kapitán a Tréner Brentfordu s trofejou EFL League One</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 @endsection

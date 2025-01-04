@@ -230,23 +230,38 @@
         </div>
     </section>
 
-    <section class="uspechy">
-    <div class="trofeje">
-      <h1>Tituly Crystal Palace FC</h1>
-      <h2>Domáce poháre</h2>
-      <ul>
-        <li>EFL Championship: 2 (1978-79, 1993-94)</li>
-        <li>EFL League One: 1 (1920-21)</li>
-      </ul>
-      <h2>Medzinárodné poháre</h2>
-        <p>Crystal Palace FC je považovaný za "priemerný" klub v anglickej Premier League, to znamená, že väčšinu sezón skončili v strede alebo spodnej polovici tabuľky. <br>
-          Nepodarilo sa mi počas histórie kvalifikovvať do žiadnych európskych súťaží ako aj výhrať najvyššiu domácu súťaž. <br>
-          Aj napriek tomu, že klub nikdy nehral Európske súťaže, fanúšikovia Crystal Palace patria k najlepším v Anglickom futbale.</p>
-    </div>
-    <div class="trofeje-obr">
-      <img src="{{ asset('pics/Palace-trofej.jpg') }}" alt="Palace trofej">
-      <p>Crystal Palace oslavuje s trofejou EFL Championship</p>
-    </div>
-  </section>
+    <section class="uspechy py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <!-- Textová časť -->
+                <div class="trofeje col-lg-8 mb-4">
+                    <div class="p-3">
+                        <h1>Tituly Crystal Palace FC</h1>
+                        <h2>Domáce poháre</h2>
+                        <ul>
+                            <li>EFL Championship: 2 (1978-79, 1993-94)</li>
+                            <li>EFL League One: 1 (1920-21)</li>
+                        </ul>
+                        <h2>Medzinárodné poháre</h2>
+                        <p>
+                            Crystal Palace FC je považovaný za "priemerný" klub v anglickej Premier League, to znamená, že väčšinu sezón skončili v strede alebo spodnej polovici tabuľky. <br>
+                            Nepodarilo sa mi počas histórie kvalifikovvať do žiadnych európskych súťaží ako aj výhrať najvyššiu domácu súťaž. <br>
+                            Aj napriek tomu, že klub nikdy nehral Európske súťaže, fanúšikovia Crystal Palace patria k najlepším v Anglickom futbale.
+                        </p>
+                    </div>
+                </div>
+                <!-- Obrázková časť -->
+                <div class="trofeje-obr col-lg-4">
+                    <div class="text-center mb-2">
+                        <img src="{{ asset('pics/Palace-trofej.jpg') }}" alt="Palace trofej" class="img-fluid rounded">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Crystal Palace oslavuje s trofejou EFL Championship</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 @endsection

@@ -238,28 +238,41 @@
             </div>
         </section>
 
-        <section class="uspechy">
-        <div class="trofeje">
-            <h1>Tituly Chelsea FC</h1>
-            <h2>Domáce poháre</h2>
-            <ul>
-                <li>Premier League: 6 (1954–55, 2004–05, 2005–06, 2009–10, 2014–15, 2016–17)</li>
-                <li>Emirates FA Cup: 8 (1969–70, 1996–97, 1999–2000, 2006–07, 2008–09, 2009–10, 2011–12, 2017–18)</li>
-                <li>Carabao Cup: 5 (1964–65, 1997–98, 2004–05, 2006–07, 2014–15)</li>
-                <li>FA Community Shield: 4 (1955, 2000, 2005, 2009)</li>
-            </ul>
-            <h2>Medzinárodné poháre</h2>
-            <ul>
-                <li>UEFA Champions League: 2 (2011-12, 2020-21)</li>
-                <li>UEFA Europa League: 2 (2012-13, 2018-19)</li>
-                <li>UEFA Super Cup: 4 (1971, 1998, 1999, 2021)</li>
-                <li>FIFA Club World Cup: 1 (2021)</li>
-            </ul>
-        </div>
-        <div class="trofeje-obr">
-            <img src="{{ asset('pics/Chelsea-trofej.jpg') }}" alt="Chelsea Trofej">
-            <p>Oslavy Chelsea FC po výhre v Lige Majstrov v roku 2021</p>
-        </div>
-    </section>
-</div>
+        <section class="uspechy py-4">
+            <div class="container-fluid">
+                <div class="row mx-2">
+                    <!-- Textová časť -->
+                    <div class="trofeje col-lg-8 mb-4">
+                        <div class="p-3">
+                            <h1>Tituly Chelsea FC</h1>
+                            <h2>Domáce poháre</h2>
+                            <ul>
+                                <li>Premier League: 6 (1954–55, 2004–05, 2005–06, 2009–10, 2014–15, 2016–17)</li>
+                                <li>Emirates FA Cup: 8 (1969–70, 1996–97, 1999–2000, 2006–07, 2008–09, 2009–10, 2011–12, 2017–18)</li>
+                                <li>Carabao Cup: 5 (1964–65, 1997–98, 2004–05, 2006–07, 2014–15)</li>
+                                <li>FA Community Shield: 4 (1955, 2000, 2005, 2009)</li>
+                            </ul>
+                            <h2>Medzinárodné poháre</h2>
+                            <ul>
+                                <li>UEFA Champions League: 2 (2011-12, 2020-21)</li>
+                                <li>UEFA Europa League: 2 (2012-13, 2018-19)</li>
+                                <li>UEFA Super Cup: 4 (1971, 1998, 1999, 2021)</li>
+                                <li>FIFA Club World Cup: 1 (2021)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Obrázková časť -->
+                    <div class="trofeje-obr col-lg-4">
+                        <div class="text-center mb-2">
+                            <img src="{{ asset('pics/Chelsea-trofej.jpg') }}" alt="Chelsea Trofej" class="img-fluid rounded">
+                        </div>
+                        <div class="uspechy-obr-popis p-2 text-center">
+                            <p>Oslavy Chelsea FC po výhre v Lige Majstrov v roku 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
 @endsection
