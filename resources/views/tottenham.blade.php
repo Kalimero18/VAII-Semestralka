@@ -1,131 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Tottenham Hotspur - Futbal v Londýne</title>
-    <link rel="stylesheet" href="{{ asset('css/styles1.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{{ route('register') }}">Futbal v Londýne</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Domov</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('oprojekte') }}">O Projekte</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ route('kluby') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Kluby
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('arsenal') }}">Arsenal</a></li>
-                        <li><a class="dropdown-item" href="{{ route('brentford') }}">Brentford</a></li>
-                        <li><a class="dropdown-item" href="{{ route('chelsea') }}">Chelsea</a></li>
-                        <li><a class="dropdown-item" href="{{ route('crystal_palace') }}">Crystal Palace</a></li>
-                        <li><a class="dropdown-item" href="{{ route('fulham') }}">Fulham</a></li>
-                        <li><a class="dropdown-item" href="{{ route('tottenham') }}">Tottenham</a></li>
-                        <li><a class="dropdown-item" href="{{ route('west_ham') }}">West Ham</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">Prihlásenie</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
+@extends('layouts.app')
 
+@section('title', 'Tottenham Hotspur FC - Futbal v Londýne')
+
+@section('kontent')
 
 <div class="kontent">
-    <section class="intro">
-        <div class="intro-text">
-        <h1>Tottenham Hotspur</h1>
-        <p>Tottenham Hotspur FC, často označovaný ako "Spurs," je profesionálny futbalový klub so sídlom v severnom Londýne. Založený v roku 1882,
-            patrí k najstarším a najznámejším anglickým futbalovým tímom. Klub hráva svoje domáce zápasy na Tottenham Hotspur Stadium s kapacitou približne 62 000 miest,
-            ktorý bol otvorený v roku 2019 a je jedným z najmodernejších futbalových štadiónov na svete.
-            Spurs sú známi svojím útočným herným štýlom a bohatou históriou. V roku 1961 sa stali prvým klubom 20. storočia, ktorý dosiahol prestížny "double"
-            – víťazstvo v lige aj FA Cupe. Získali viacero významných domácich a európskych trofejí, pričom medzi ich najväčšie úspechy patrí víťazstvo v Pohári UEFA v rokoch 1972 a 1984.
-            V Premier League sú tradične silným klubom s početnou fanúšikovskou základňou a intenzívnou rivalitou s ďalšími londýnskymi klubmi, najmä s Arsenalom, čo vytvára ikonické derby nazývané "North London Derby."
-            Tottenham má bohatú futbalovú tradíciu a je obľúbený pre svoj inovatívny štýl hry, ktorý priťahuje fanúšikov z celého sveta. <br>
-            Tottenham je tiež jediným klubom v Premier League, ktorý má kohúta ako svoj symbol, čo odkazuje na Williama Shakespearea a jeho spojenie so zakladateľom klubu, ktorý vlastnil
-            kohútov používaných v kohútích zápasoch. Kohút na lopte na ich embléme sa stal jedným z najznámejších symbolov anglického futbalu.
-        </p>
-        </div>
-        <div class="intro-obr">
-            <img src="{{ asset('pics/Tottenham-logo.png') }}" alt="tottenham logo">
+    <section class="intro container-fluid py-4">
+        <div class="row mx-2">
+            <div class="col-md-8 intro-text">
+                <h1>Tottenham Hotspur</h1>
+                <p>
+                    Tottenham Hotspur FC, často označovaný ako "Spurs," je profesionálny futbalový klub so sídlom v severnom Londýne. Založený v roku 1882,
+                    patrí k najstarším a najznámejším anglickým futbalovým tímom. Klub hráva svoje domáce zápasy na Tottenham Hotspur Stadium s kapacitou približne 62 000 miest,
+                    ktorý bol otvorený v roku 2019 a je jedným z najmodernejších futbalových štadiónov na svete.
+                    Spurs sú známi svojím útočným herným štýlom a bohatou históriou. V roku 1961 sa stali prvým klubom 20. storočia, ktorý dosiahol prestížny "double"
+                    – víťazstvo v lige aj FA Cupe. Získali viacero významných domácich a európskych trofejí, pričom medzi ich najväčšie úspechy patrí víťazstvo v Pohári UEFA v rokoch 1972 a 1984.
+                    V Premier League sú tradične silným klubom s početnou fanúšikovskou základňou a intenzívnou rivalitou s ďalšími londýnskymi klubmi, najmä s Arsenalom, čo vytvára ikonické derby nazývané "North London Derby."
+                    Tottenham má bohatú futbalovú tradíciu a je obľúbený pre svoj inovatívny štýl hry, ktorý priťahuje fanúšikov z celého sveta. <br>
+                    Tottenham je tiež jediným klubom v Premier League, ktorý má kohúta ako svoj symbol, čo odkazuje na Williama Shakespearea a jeho spojenie so zakladateľom klubu, ktorý vlastnil
+                    kohútov používaných v kohútích zápasoch. Kohút na lopte na ich embléme sa stal jedným z najznámejších symbolov anglického futbalu.
+                </p>
+            </div>
+            <div class="col-md-4 text-center intro-obr">
+                <img src="{{ asset('pics/Tottenham-logo.png') }}" alt="tottenham logo" class="img-fluid rounded">
+            </div>
         </div>
     </section>
-    <section class="supiska">
-        <div class="supiska-kontent">
-            <div class="supiska-txt">
-                <h1>Súpiska pre sezónu 2024/2025</h1>
-                <div class="brankari">
+
+    <section class="supiska container-fluid">
+        <div class="row mx-2">
+            <div class="col-12 text-center mb-4">
+                <h1 class="nadpis">Súpiska pre sezónu 2024/2025</h1>
+            </div>
+
+            <!-- Brankári -->
+            <div class="col-md-3 mb-3">
+                <div class="hraci">
                     <p><strong>Brankári</strong></p>
-                    <p> #40 Austin Brandon <img src="{{ asset('pics/england.png') }}" alt= "ang" class="ikona-vlajky"><br>
+                    <p>
+                        #40 Austin Brandon <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
                         #20 Forster Fraser <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #X  Gunter Luca <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #1  Vicario Guglielmo <img src="{{ asset('pics/italy.png') }}" alt="ita" class="ikona-vlajky"><br>
-                        #41 Whiteman Alfie <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"> <br> </p>
+                        #X Gunter Luca <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #1 Vicario Guglielmo <img src="{{ asset('pics/italy.png') }}" alt="ita" class="ikona-vlajky"><br>
+                        #41 Whiteman Alfie <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                    </p>
                 </div>
-                <div class="obrancovia">
+            </div>
+
+            <!-- Obrancovia -->
+            <div class="col-md-3 mb-3">
+                <div class="hraci">
                     <p><strong>Obrancovia</strong></p>
-                    <p> #33 Davies Ben <img src="{{ asset('pics/wales.png') }}" alt="wal" class="ikona-vlajky"><br>
-                        #5  Dorrington Alfie <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #6  Dragusin Radu <img src="{{ asset('pics/romania.png') }}" alt="rum" class="ikona-vlajky"><br>
+                    <p>
+                        #33 Davies Ben <img src="{{ asset('pics/wales.png') }}" alt="wal" class="ikona-vlajky"><br>
+                        #5 Dorrington Alfie <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #6 Dragusin Radu <img src="{{ asset('pics/romania.png') }}" alt="rum" class="ikona-vlajky"><br>
                         #23 Porro Pedro <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
-                        #3  Reguilon Sergio <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"> <br>
+                        #3 Reguilon Sergio <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
                         #17 Romero Cristian Gabriel <img src="{{ asset('pics/argentina.png') }}" alt="arg" class="ikona-vlajky"><br>
                         #24 Spence Djed <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #13 Udogie Destiny <img src="{{ asset('pics/italy.png') }}" alt="tal" class="ikona-vlajky"><br>
-                        #37 van de Ven Micky <img src="{{ asset('pics/netherlands.png') }}" alt="hol" class="ikona-vlajky"><br></p>
+                        #13 Udogie Destiny <img src="{{ asset('pics/italy.png') }}" alt="ita" class="ikona-vlajky"><br>
+                        #37 van de Ven Micky <img src="{{ asset('pics/netherlands.png') }}" alt="hol" class="ikona-vlajky"><br>
+                    </p>
                 </div>
-                <div class="stredopoliari">
+            </div>
+
+            <!-- Stredopoliari -->
+            <div class="col-md-3 mb-3">
+                <div class="hraci">
                     <p><strong>Stredopoliari</strong></p>
-                    <p> #30 Bentancur Rodrigo <img src="{{ asset('pics/uruguay.png') }}" alt="uru" class="ikona-vlajky"> <br>
-                        #15 Bergvall Lucas <img src="{{ asset('pics/sweden.png') }}" alt="sve" class="ikona-vlajky"> <br>
-                        #8  Bissouma Yves <img src="{{ asset('pics/mali.png') }}" alt="mal" class="ikona-vlajky"><br>
-                        #X  Cassanova Dante Jamel <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"> <br>
+                    <p>
+                        #30 Bentancur Rodrigo <img src="{{ asset('pics/uruguay.png') }}" alt="uru" class="ikona-vlajky"><br>
+                        #15 Bergvall Lucas <img src="{{ asset('pics/sweden.png') }}" alt="sve" class="ikona-vlajky"><br>
+                        #8 Bissouma Yves <img src="{{ asset('pics/mali.png') }}" alt="mal" class="ikona-vlajky"><br>
+                        #X Cassanova Dante Jamel <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
                         #14 Gray Archie <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #X  Hall Tyrese <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"> <br>
-                        #X  Kyerematen Rio <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #10 Maddison James <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"> <br>
-                        #2  Robson Max <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #29 Sarr Pape Matar <img src="{{ asset('pics/senegal.png') }}" alt="sen" class="ikona-vlajky"><br></p>
+                        #X Hall Tyrese <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #X Kyerematen Rio <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #10 Maddison James <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #2 Robson Max <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #29 Sarr Pape Matar <img src="{{ asset('pics/senegal.png') }}" alt="sen" class="ikona-vlajky"><br>
+                    </p>
                 </div>
-                <div class="utocnici">
+            </div>
+
+            <!-- Útočníci -->
+            <div class="col-md-3 mb-3">
+                <div class="hraci">
                     <p><strong>Útočníci</strong></p>
-                    <p> #63 Ajayi Oyindamola <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                    <p>
+                        #63 Ajayi Oyindamola <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
                         #22 Johnson Brennan <img src="{{ asset('pics/wales.png') }}" alt="wal" class="ikona-vlajky"><br>
                         #21 Kulusevski Dejan <img src="{{ asset('pics/sweden.png') }}" alt="sve" class="ikona-vlajky"><br>
                         #42 Lankshear Will <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
                         #47 Moore Mikey <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
                         #28 Odobert Wilson <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
-                        #9  Richarlison <img src="{{ asset('pics/brazil.png') }}" alt="bra" class="ikona-vlajky"><br>
+                        #9 Richarlison <img src="{{ asset('pics/brazil.png') }}" alt="bra" class="ikona-vlajky"><br>
                         #19 Solanke Dominic <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #7  Son Heung-Min (<strong>C</strong>) <img src="{{ asset('pics/south-korea.png') }}" alt="sou" class="ikona-vlajky"> <br>
-                        #16 Werner Timo <img src="{{ asset('pics/german-flag.png') }}" alt="ger" class="ikona-vlajky"><br></p>
+                        #7 Son Heung-Min (<strong>C</strong>) <img src="{{ asset('pics/south-korea.png') }}" alt="sou" class="ikona-vlajky"><br>
+                        #16 Werner Timo <img src="{{ asset('pics/german-flag.png') }}" alt="ger" class="ikona-vlajky"><br>
+                    </p>
                     <p><strong>Tréner</strong></p>
                     <p>Postecoglou Ange <img src="{{ asset('pics/australia.png') }}" alt="aus" class="ikona-vlajky"></p>
                 </div>
             </div>
-            <div class="supiska-obr">
-                <img src="{{ asset('pics/Tottenham-supiska.png') }}" alt="Tottenham Hotspur supiska 2024/25">
-                <p>Tímové foto Tottenhamu Hotspur pre sezónu 2024/25</p>
+        </div>
+
+        <!-- Obrázok tímu -->
+        <div class="row text-center mt-4">
+            <div class="col-12">
+                <img src="{{ asset('pics/Tottenham-supiska.png') }}" alt="Tottenham Hotspur supiska 2024/25" class="timove-foto"><br>
+                <p class="tim-popis">Tímové foto Tottenhamu Hotspur pre sezónu 2024/25</p>
             </div>
         </div>
     </section>
+
     <section class="stadion">
         <div class="stadion-kontent">
             <div class="stadion-txt">
@@ -254,5 +243,4 @@
         </div>
     </section>
 </div>
-</body>
-</html>
+@endsection

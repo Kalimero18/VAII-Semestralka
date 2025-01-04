@@ -1,133 +1,123 @@
-<!DOCTYPE html>
-<html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <title>Chelsea FC - Futbal v Londýne</title>
-    <link rel="stylesheet" href="{{ asset('css/styles1.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{{ route('register') }}">Futbal v Londýne</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Domov</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('oprojekte') }}">O Projekte</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ route('kluby') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Kluby
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('arsenal') }}">Arsenal</a></li>
-                        <li><a class="dropdown-item" href="{{ route('brentford') }}">Brentford</a></li>
-                        <li><a class="dropdown-item" href="{{ route('chelsea') }}">Chelsea</a></li>
-                        <li><a class="dropdown-item" href="{{ route('crystal_palace') }}">Crystal Palace</a></li>
-                        <li><a class="dropdown-item" href="{{ route('fulham') }}">Fulham</a></li>
-                        <li><a class="dropdown-item" href="{{ route('tottenham') }}">Tottenham</a></li>
-                        <li><a class="dropdown-item" href="{{ route('west_ham') }}">West Ham</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">Prihlásenie</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
+@extends('layouts.app')
 
+@section('title', 'Chelsea FC - Futbal v Londýne')
 
-<div class="kontent">
-    <section class="intro">
-        <div class="intro-text">
-        <h1>Chelsea FC</h1>
-        <p>Chelsea Football Club, známy tiež ako Chelsea, je anglický futbalový veľkoklub sídliaci vo Fulhame v Londýne. Klub bol založený v roku 1905 a odvtedy patrí medzi stálice najvyššej anglickej futbalovej súťaže.
-            Chelsea hrá svoje domáce zápasy na štadióne Stamford Bridge, ktorý je jeho domovom už od samotného vzniku.
-            Dosiahla počas svojej histórie veľa úspechov, vrátane víťazstiev v rôznych domácich pohárových súťažiach, ako FA Cup a Ligový pohár, najmä počas 60., 70., 90. a 00. rokov.
-            Hoci klub prechádzal viacerými vzostupmi a pádmi, stabilný rast a investície mu umožnili postupne získať miesto medzi najlepšími tímami Anglicka.
-            Najúspešnejšie obdobie pre Chelsea však začalo v roku 2003, keď klub odkúpil ruský miliardár Roman Abramovič.
-            Od roku 2005 získala Chelsea niekoľko titulov v Premier League, FA Cupe, Ligovom pohári a európskych súťažiach.
-            Najväčší európsky úspech dosiahla Chelsea v roku 2012, keď sa stala prvým a zatiaľ jediným klubom z Londýna, ktorý vyhral Ligu majstrov UEFA.
-            Tento triumf pod vedením trénera Roberta Di Mattea patrí medzi najpamätnejšie momenty v histórii klubu. O deväť rokov neskôr, v roku 2021, Chelsea zopakovala tento úspech a získala druhý titul v Lige majstrov, tentoraz pod vedením Thomasa Tuchela.
-            Chelsea je dnes považovaná za jeden z najväčších a najúspešnejších futbalových klubov na svete.
-            Okrem dvoch triumfov v Lige majstrov sa môže pochváliť aj víťazstvami v Európskej lige UEFA, Superpohári UEFA a Majstrovstvách sveta klubov FIFA.
-            Klub si udržiava stabilnú pozíciu medzi futbalovou elitou a jeho vplyv na anglický a európsky futbal zostáva silný.</p>
-        </div>
-        <div class="intro-obr">
-            <img src="{{ asset('pics/Chelsea-logo.png') }}" alt="chelsea logo">
-        </div>
-    </section>
-    <section class="supiska">
-        <div class="supiska-kontent">
-            <div class="supiska-txt">
-                <h1>Súpiska pre sezónu 2024/2025</h1>
-                <div class="brankari">
+@section('kontent')
+
+    <div class="kontent">
+        <section class="intro container-fluid py-4">
+            <div class="row mx-2">
+                <div class="col-md-8 intro-text">
+                    <h1>Chelsea FC</h1>
+                    <p>
+                        Chelsea Football Club, známy tiež ako Chelsea, je anglický futbalový veľkoklub sídliaci vo Fulhame v Londýne. Klub bol založený v roku 1905 a odvtedy patrí medzi stálice najvyššej anglickej futbalovej súťaže.
+                        Chelsea hrá svoje domáce zápasy na štadióne Stamford Bridge, ktorý je jeho domovom už od samotného vzniku.
+                        Dosiahla počas svojej histórie veľa úspechov, vrátane víťazstiev v rôznych domácich pohárových súťažiach, ako FA Cup a Ligový pohár, najmä počas 60., 70., 90. a 00. rokov.
+                        Hoci klub prechádzal viacerými vzostupmi a pádmi, stabilný rast a investície mu umožnili postupne získať miesto medzi najlepšími tímami Anglicka.
+                        Najúspešnejšie obdobie pre Chelsea však začalo v roku 2003, keď klub odkúpil ruský miliardár Roman Abramovič.
+                        Od roku 2005 získala Chelsea niekoľko titulov v Premier League, FA Cupe, Ligovom pohári a európskych súťažiach.
+                        Najväčší európsky úspech dosiahla Chelsea v roku 2012, keď sa stala prvým a zatiaľ jediným klubom z Londýna, ktorý vyhral Ligu majstrov UEFA.
+                        Tento triumf pod vedením trénera Roberta Di Mattea patrí medzi najpamätnejšie momenty v histórii klubu. O deväť rokov neskôr, v roku 2021, Chelsea zopakovala tento úspech a získala druhý titul v Lige majstrov, tentoraz pod vedením Thomasa Tuchela.
+                        Chelsea je dnes považovaná za jeden z najväčších a najúspešnejších futbalových klubov na svete.
+                        Okrem dvoch triumfov v Lige majstrov sa môže pochváliť aj víťazstvami v Európskej lige UEFA, Superpohári UEFA a Majstrovstvách sveta klubov FIFA.
+                        Klub si udržiava stabilnú pozíciu medzi futbalovou elitou a jeho vplyv na anglický a európsky futbal zostáva silný.
+                    </p>
+                </div>
+                <div class="col-md-4 text-center intro-obr">
+                    <img src="{{ asset('pics/Chelsea-logo.png') }}" alt="chelsea logo" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+    <section class="supiska container-fluid">
+        <div class="row mx-2">
+            <div class="col-12 text-center mb-4">
+                <h1 class="nadpis">Súpiska pre sezónu 2024/2025</h1>
+            </div>
+
+            <!-- Brankári -->
+            <div class="col-md-3 mb-3">
+                <div class="hraci">
                     <p><strong>Brankári</strong></p>
-                    <p> #47 Bergstrom Lucas <img src="{{ asset('pics/finland.png') }}" alt="fin" class="ikona-vlajky"><br>
+                    <p>
+                        #47 Bergstrom Lucas <img src="{{ asset('pics/finland.png') }}" alt="fin" class="ikona-vlajky"><br>
                         #13 Bettinelli Marcus <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
                         #12 Jorgensen Filip <img src="{{ asset('pics/denmark.png') }}" alt="dan" class="ikona-vlajky"><br>
-                        #1  Sanchez Robert <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
+                        #1 Sanchez Robert <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
+                    </p>
                 </div>
-                <div class="obrancovia">
+            </div>
+
+            <!-- Obrancovia -->
+            <div class="col-md-3 mb-3">
+                <div class="hraci">
                     <p><strong>Obrancovia</strong></p>
-                    <p> #12 Acheampong Josh <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #4  Adarabioyo Tosin <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #5  Badiashile Benoit <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
+                    <p>
+                        #12 Acheampong Josh <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #4 Adarabioyo Tosin <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #5 Badiashile Benoit <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
                         #21 Chilwell Ben <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #6  Colwill Levi <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"> <br>
-                        #3  Cucurella Marc <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
-                        #2  Disasi Axel <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
+                        #6 Colwill Levi <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #3 Cucurella Marc <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
+                        #2 Disasi Axel <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
                         #29 Fofana Wesley <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
-                        #27 Gusto Malo <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"> <br>
+                        #27 Gusto Malo <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
                         #24 James Reece (<strong>C</strong>) <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #4  Sturge Zak <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br></p>
+                        #4 Sturge Zak <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                    </p>
                 </div>
-                <div class="stredopoliari">
+            </div>
+
+            <!-- Stredopoliari -->
+            <div class="col-md-3 mb-3">
+                <div class="hraci">
                     <p><strong>Stredopoliari</strong></p>
-                    <p> #25 Caicedo Moises <img src="{{ asset('pics/equador.png') }}" alt="ekv" class="ikona-vlajky"> <br>
-                        #31 Casadei Cesare <img src="{{ asset('pics/italy.png') }}" alt="tal" class="ikona-vlajky"> <br>
+                    <p>
+                        #25 Caicedo Moises <img src="{{ asset('pics/equador.png') }}" alt="ekv" class="ikona-vlajky"><br>
+                        #31 Casadei Cesare <img src="{{ asset('pics/italy.png') }}" alt="tal" class="ikona-vlajky"><br>
                         #17 Chukwuemeka Carney <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #22 Dewsbury-Hall Kiernan <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"> <br>
-                        #X  Dyer Kiano <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #8  Fernandez Enzo <img src="{{ asset('pics/argentina.png') }}" alt="arg" class="ikona-vlajky"> <br>
-                        #X  George Tyrique <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #45 Lavia Romeo <img src="{{ asset('pics/belgium.png') }}" alt="bel" class="ikona-vlajky"> <br>
+                        #22 Dewsbury-Hall Kiernan <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #X Dyer Kiano <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #8 Fernandez Enzo <img src="{{ asset('pics/argentina.png') }}" alt="arg" class="ikona-vlajky"><br>
+                        #X George Tyrique <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #45 Lavia Romeo <img src="{{ asset('pics/belgium.png') }}" alt="bel" class="ikona-vlajky"><br>
                         #18 Nkunku Christopher <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
                         #20 Palmer Cole <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
                         #40 Veiga Renato <img src="{{ asset('pics/portugal.png') }}" alt="por" class="ikona-vlajky"><br>
+                    </p>
                 </div>
-                <div class="utocnici">
+            </div>
+
+            <!-- Útočníci -->
+            <div class="col-md-3 mb-3">
+                <div class="hraci">
                     <p><strong>Útočníci</strong></p>
-                    <p> #16 Deivid Washington <img src="{{ asset('pics/brazil.png') }}" alt="bra" class="ikona-vlajky"><br>
+                    <p>
+                        #16 Deivid Washington <img src="{{ asset('pics/brazil.png') }}" alt="bra" class="ikona-vlajky"><br>
                         #38 Guiu Marc <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
                         #15 Jackson Nicolas <img src="{{ asset('pics/senegal.png') }}" alt="sen" class="ikona-vlajky"><br>
-                        #14 Felix Joao <img src="{{ asset('pics/portugal.png') }}" alt="por" class="ikona-vlajky"> <br>
-                        #11 Madueke Noni <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"> <br>
-                        #10 Mudryk Mykhailo <img src="{{ asset('pics/ukraine.png') }}" alt="ukr" class="ikona-vlajky"> <br>
-                        #7  Neto Pedro <img src="{{ asset('pics/portugal.png') }}" alt="por" class="ikona-vlajky"> <br>
-                        #19 Sancho Jadon <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"> <br>
-                        #X  Tauriainen Jimi <img src="{{ asset('pics/finland.png') }}" alt="fin" class="ikona-vlajky"><br></p>
+                        #14 Felix Joao <img src="{{ asset('pics/portugal.png') }}" alt="por" class="ikona-vlajky"><br>
+                        #11 Madueke Noni <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #10 Mudryk Mykhailo <img src="{{ asset('pics/ukraine.png') }}" alt="ukr" class="ikona-vlajky"><br>
+                        #7 Neto Pedro <img src="{{ asset('pics/portugal.png') }}" alt="por" class="ikona-vlajky"><br>
+                        #19 Sancho Jadon <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #X Tauriainen Jimi <img src="{{ asset('pics/finland.png') }}" alt="fin" class="ikona-vlajky"><br>
+                    </p>
                     <p><strong>Tréner</strong></p>
                     <p> Maresca Enzo <img src="{{ asset('pics/italy.png') }}" alt="tal" class="ikona-vlajky"></p>
                 </div>
             </div>
-            <div class="supiska-obr">
-                <img src="{{ asset('pics/Chelsea-Supiska.jpeg') }}" alt="Arsenal supiska 2024/25">
-                <p>Tímové foto Chelsea FC pre sezónu 2024/25</p>
+        </div>
+
+        <!-- Obrázok tímu -->
+        <div class="row text-center mt-4">
+            <div class="col-12">
+                <img src="{{ asset('pics/Chelsea-Supiska.jpeg') }}" alt="Chelsea supiska 2024/25" class="timove-foto"><br>
+                <p class="tim-popis">Tímové foto Chelsea FC pre sezónu 2024/25</p>
             </div>
         </div>
     </section>
+
     <section class="stadion">
         <div class="stadion-kontent">
             <div class="stadion-txt">
@@ -260,5 +250,4 @@
         </div>
     </section>
 </div>
-</body>
-</html>
+@endsection
