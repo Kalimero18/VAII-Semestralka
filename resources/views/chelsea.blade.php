@@ -242,7 +242,7 @@
             <div class="container-fluid">
                 <div class="row mx-2">
                     <!-- Textová časť -->
-                    <div class="trofeje col-lg-8 mb-4">
+                    <div class="uspechy-text col-lg-8 mb-4">
                         <div class="p-3">
                             <h1>Tituly Chelsea FC</h1>
                             <h2>Domáce poháre</h2>
@@ -262,17 +262,16 @@
                         </div>
                     </div>
                     <!-- Obrázková časť -->
-                    <div class="trofeje-obr col-lg-4">
-                        <div class="text-center mb-2">
+                    <div class="uspechy-obr col-lg-4">
+                        <div class="text-center mb-2 my-4">
                             <img src="{{ asset('pics/Chelsea-trofej.jpg') }}" alt="Chelsea Trofej" class="img-fluid rounded">
                         </div>
-                        <div class="uspechy-obr-popis p-2 text-center">
+                        <div class="uspechy-obr-popis p-2 text-center my-2">
                             <p>Oslavy Chelsea FC po výhre v Lige Majstrov v roku 2021</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </div>
 @endsection

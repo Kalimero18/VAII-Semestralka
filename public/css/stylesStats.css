@@ -1,10 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
+    font-family: Verdana, sans-serif;
     height: 100vh;
     color: white;
     margin: 0;
     padding: 0;
+    background-color: #000000 !important;
 }
 
 .container {
@@ -24,7 +24,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.alert-success {
+.uspech {
     background-color: #28a745;
     color: white;
     padding: 15px;
@@ -33,7 +33,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.alert {
+.upozornenie {
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -55,7 +55,7 @@ th, td {
 }
 
 th {
-    background-color: #444;
+    background-color: slategrey;
     color: white;
     font-weight: bold;
 }
@@ -81,15 +81,15 @@ td a:hover {
     background-color: #28a745;
 }
 
-.btn-warning {
+.btn-varovanie {
     background-color: #ffc107;
 }
 
-.btn-danger {
+.btn-pozor {
     background-color: #dc3545;
 }
 
-.btn-primary {
+.btn-hlavny {
     background-color: #007bff;
     color: white;
     padding: 12px 30px;
@@ -97,7 +97,7 @@ td a:hover {
     transition: background-color 0.3s;
 }
 
-.btn-primary:hover {
+.btn-hlavny:hover {
     background-color: #0056b3;
 }
 
@@ -112,16 +112,40 @@ td a:hover {
     opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
-    table th, table td {
-        font-size: 12px;
-        padding: 10px;
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .formular-kontrola {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
     }
 
     .container {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 10px;
     }
+}
+
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.formular-kontrola {
+    width: 100%;
+}
+
+.table-respozivita {
+    overflow-x: auto;
 }
 
 

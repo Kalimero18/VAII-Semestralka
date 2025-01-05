@@ -260,8 +260,8 @@
                 </div>
                 <!-- Obrázková časť -->
                 <div class="uspechy-obr col-lg-4">
-                    <div class="text-center mb-2">
-                        <img src="{{ asset('pics/Arsenal-trofej.jpg') }}" alt="Arsenal fotka trofeje" class="img-fluid rounded">
+                    <div class="text-center mb-2 ">
+                        <img src="{{ asset('pics/Arsenal-trofej.jpg') }}" alt="Arsenal fotka trofeje" class="trofeje-obr">
                     </div>
                     <div class="uspechy-obr-popis p-2 text-center">
                         <p>Arsène Wenger držiaci zlatú trofej The Invincibles</p>

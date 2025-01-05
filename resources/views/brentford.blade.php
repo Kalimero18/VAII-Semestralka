@@ -235,7 +235,7 @@
         <div class="container-fluid">
             <div class="row mx-2">
                 <!-- Textová časť -->
-                <div class="trofeje col-lg-8 mb-4">
+                <div class="uspechy-text col-lg-8 mb-4">
                     <div class="p-3">
                         <h1>Tituly Brentfordu FC</h1>
                         <h2>Domáce poháre</h2>
@@ -251,9 +251,9 @@
                     </div>
                 </div>
                 <!-- Obrázková časť -->
-                <div class="trofeje-obr col-lg-4">
+                <div class="uspechy-obr col-lg-4">
                     <div class="text-center mb-2">
-                        <img src="{{ asset('pics/Brentford-trofej.jpg') }}" alt="Brentford Trofej" class="img-fluid rounded">
+                        <img src="{{ asset('pics/Brentford-trofej.jpg') }}" alt="Brentford Trofej" class="trofeje-obr">
                     </div>
                     <div class="uspechy-obr-popis p-2 text-center">
                         <p>Kapitán a Tréner Brentfordu s trofejou EFL League One</p>

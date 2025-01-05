@@ -4,10 +4,10 @@
 
 @section('kontent')
     <div class="container">
-        <h1>Pridaj Štatistiky hráča</h1>
+        <h1 class="text-center">Pridaj Štatistiky hráča</h1>
 
         @if ($errors->any())
-            <div class="alert alert-danger">
+            <div class="upozornenie alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -16,41 +16,46 @@
             </div>
         @endif
 
-        <form action="{{ route('stats_players.store') }}" method="POST">
+        <form action="{{ route('stats_players.store') }}" method="POST" class="row g-3">
             @csrf
 
-            <div class="mb-3">
+            <div class="col-md-6">
                 <label for="player_name" class="form-label">Meno</label>
-                <input type="text" name="name" id="name" class="form-control" value="{{ old('player_name') }}" required>
+                <input type="text" name="name" id="name" class="formular-kontrola" value="{{ old('player_name') }}" required>
             </div>
 
-            <div class="mb-3">
+            <div class="col-md-6">
                 <label for="position" class="form-label">Pozícia</label>
-                <input type="text" name="position" id="position" class="form-control" value="{{ old('position') }}" required>
+                <input type="text" name="position" id="position" class="formular-kontrola" value="{{ old('position') }}" required>
             </div>
 
-            <div class="mb-3">
+            <div class="col-md-4">
                 <label for="matches" class="form-label">Odohrané zápasy</label>
-                <input type="number" name="matches" id="matches" class="form-control" value="{{ old('matches') }}" required>
+                <input type="number" name="matches" id="matches" class="formular-kontrola" value="{{ old('matches') }}" required>
             </div>
 
-            <div class="mb-3">
+            <div class="col-md-4">
                 <label for="goals" class="form-label">Góly</label>
-                <input type="number" name="goals" id="goals" class="form-control" value="{{ old('goals') }}" required>
+                <input type="number" name="goals" id="goals" class="formular-kontrola" value="{{ old('goals') }}" required>
             </div>
 
-            <div class="mb-3">
+            <div class="col-md-4">
                 <label for="assists" class="form-label">Asistencie</label>
-                <input type="number" name="assists" id="assists" class="form-control" value="{{ old('assists') }}" required>
+                <input type="number" name="assists" id="assists" class="formular-kontrola" value="{{ old('assists') }}" required>
             </div>
 
-            <div class="mb-3">
+            <div class="col-12">
                 <label for="market_value" class="form-label">Trhová hodnota</label>
-                <input type="number" step="0.01" name="market_value" id="market_value" class="form-control" value="{{ old('market_value') }}" required>
+                <input type="number" step="0.01" name="market_value" id="market_value" class="formular-kontrola" value="{{ old('market_value') }}" required>
             </div>
 
-            <button type="submit" class="btn btn-primary">Uložiť</button>
-            <a href="{{ route('stats_players.index') }}" class="btn btn-secondary">Zrušiť</a>
+            <div class="col-12 d-flex justify-content-between">
+                <button type="submit" class="btn btn-hlavny">Uložiť</button>
+                <a href="{{ route('stats_players.index') }}" class="btn btn-secondary">Zrušiť</a>
+            </div>
         </form>
     </div>
 @endsection
+
+
+

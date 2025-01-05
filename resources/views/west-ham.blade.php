@@ -39,11 +39,10 @@
                 <div class="hraci">
                     <p><strong>Brankári</strong></p>
                     <p>
-                        #40 Austin Brandon <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #20 Forster Fraser <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #X Gunter Luca <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #1 Vicario Guglielmo <img src="{{ asset('pics/italy.png') }}" alt="ita" class="ikona-vlajky"><br>
-                        #41 Whiteman Alfie <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #23 Areola Alphonse <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
+                        #1 Fabianski Lukasz <img src="{{ asset('pics/poland.png') }}" alt="pol" class="ikona-vlajky"><br>
+                        #21 Foderingham Wesley <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #X Herrick Finley <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
                     </p>
                 </div>
             </div>
@@ -53,15 +52,16 @@
                 <div class="hraci">
                     <p><strong>Obrancovia</strong></p>
                     <p>
-                        #33 Davies Ben <img src="{{ asset('pics/wales.png') }}" alt="wal" class="ikona-vlajky"><br>
-                        #5 Dorrington Alfie <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #6 Dragusin Radu <img src="{{ asset('pics/romania.png') }}" alt="rum" class="ikona-vlajky"><br>
-                        #23 Porro Pedro <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
-                        #3 Reguilon Sergio <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
-                        #17 Romero Cristian Gabriel <img src="{{ asset('pics/argentina.png') }}" alt="arg" class="ikona-vlajky"><br>
-                        #24 Spence Djed <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #13 Udogie Destiny <img src="{{ asset('pics/italy.png') }}" alt="ita" class="ikona-vlajky"><br>
-                        #37 van de Ven Micky <img src="{{ asset('pics/netherlands.png') }}" alt="hol" class="ikona-vlajky"><br>
+                        #X Casey Kaelan <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #5 Coufal Vladimir <img src="{{ asset('pics/czech-republic.png') }}" alt="cze" class="ikona-vlajky"><br>
+                        #3 Cresswell Aaron <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #33 Emerson <img src="{{ asset('pics/italy.png') }}" alt="ita" class="ikona-vlajky"><br>
+                        #26 Killman Max <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #15 Mavropanos Konstantinos <img src="{{ asset('pics/greece.png') }}" alt="gre" class="ikona-vlajky"><br>
+                        #2 Robinson Junior <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #X Scarles Oliver <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #25 Todibo Jean-Clair <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
+                        #29 Wan-Bissaka Aaron <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
                     </p>
                 </div>
             </div>
@@ -71,16 +71,14 @@
                 <div class="hraci">
                     <p><strong>Stredopoliari</strong></p>
                     <p>
-                        #30 Bentancur Rodrigo <img src="{{ asset('pics/uruguay.png') }}" alt="uru" class="ikona-vlajky"><br>
-                        #15 Bergvall Lucas <img src="{{ asset('pics/sweden.png') }}" alt="sve" class="ikona-vlajky"><br>
-                        #8 Bissouma Yves <img src="{{ asset('pics/mali.png') }}" alt="mal" class="ikona-vlajky"><br>
-                        #X Cassanova Dante Jamel <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #14 Gray Archie <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #X Hall Tyrese <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #X Kyerematen Rio <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #10 Maddison James <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #2 Robson Max <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #29 Sarr Pape Matar <img src="{{ asset('pics/senegal.png') }}" alt="sen" class="ikona-vlajky"><br>
+                        #19 Alvarez Edson <img src="{{ asset('pics/mexico.png') }}" alt="mex" class="ikona-vlajky"><br>
+                        #39 Irving Andrew <img src="{{ asset('pics/scotland.png') }}" alt="sko" class="ikona-vlajky"><br>
+                        #14 Kudus Mohammed <img src="{{ asset('pics/ghana.png') }}" alt="gha" class="ikona-vlajky"><br>
+                        #8 Orford Lewis <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #10 Paqueta Lucas <img src="{{ asset('pics/brazil.png') }}" alt="bra" class="ikona-vlajky"><br>
+                        #24 Rodriguez Guido <img src="{{ asset('pics/argentina.png') }}" alt="arg" class="ikona-vlajky"><br>
+                        #4 Soler Carlos <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"><br>
+                        #28 Soucek Tomas <img src="{{ asset('pics/czech-republic.png') }}" alt="cze" class="ikona-vlajky"><br>
                     </p>
                 </div>
             </div>
@@ -90,19 +88,16 @@
                 <div class="hraci">
                     <p><strong>Útočníci</strong></p>
                     <p>
-                        #63 Ajayi Oyindamola <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #22 Johnson Brennan <img src="{{ asset('pics/wales.png') }}" alt="wal" class="ikona-vlajky"><br>
-                        #21 Kulusevski Dejan <img src="{{ asset('pics/sweden.png') }}" alt="sve" class="ikona-vlajky"><br>
-                        #42 Lankshear Will <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #47 Moore Mikey <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #28 Odobert Wilson <img src="{{ asset('pics/france.png') }}" alt="fra" class="ikona-vlajky"><br>
-                        #9 Richarlison <img src="{{ asset('pics/brazil.png') }}" alt="bra" class="ikona-vlajky"><br>
-                        #19 Solanke Dominic <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
-                        #7 Son Heung-Min (<strong>C</strong>) <img src="{{ asset('pics/south-korea.png') }}" alt="sou" class="ikona-vlajky"><br>
-                        #16 Werner Timo <img src="{{ asset('pics/german-flag.png') }}" alt="ger" class="ikona-vlajky"><br>
+                        #9 Antonio Michail <img src="{{ asset('pics/jamaica.png') }}" alt="jam" class="ikona-vlajky"><br>
+                        #20 Bowen Jarrod (<strong>C</strong>) <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #11 Fullkrug Niclas <img src="{{ asset('pics/german-flag.png') }}" alt="nem" class="ikona-vlajky"><br>
+                        #18 Ings Danny <img src="{{ asset('pics/england.png') }}" alt="ang" class="ikona-vlajky"><br>
+                        #17 Luis Guilherme <img src="{{ asset('pics/brazil.png') }}" alt="bra" class="ikona-vlajky"><br>
+                        #X Moore Sean <img src="{{ asset('pics/ireland.png') }}" alt="irs" class="ikona-vlajky"><br>
+                        #7 Summerville Crysencio <img src="{{ asset('pics/netherlands.png') }}" alt="hol" class="ikona-vlajky"><br>
                     </p>
                     <p><strong>Tréner</strong></p>
-                    <p>Postecoglou Ange <img src="{{ asset('pics/australia.png') }}" alt="aus" class="ikona-vlajky"></p>
+                    <p>Lopetegui Julen <img src="{{ asset('pics/spain.png') }}" alt="spa" class="ikona-vlajky"></p>
                 </div>
             </div>
         </div>
@@ -110,8 +105,8 @@
         <!-- Obrázok tímu -->
         <div class="row text-center mt-4">
             <div class="col-12">
-                <img src="{{ asset('pics/Tottenham-supiska.png') }}" alt="Tottenham Hotspur supiska 2024/25" class="timove-foto"><br>
-                <p class="tim-popis">Tímové foto Tottenhamu Hotspur pre sezónu 2024/25</p>
+                <img src="{{ asset('pics/West-ham-supiska.jpeg') }}" alt="West Ham supiska 2024/25" class="timove-foto"><br>
+                <p class="tim-popis">Tímové foto West Hamu United FC pre sezónu 2024/25</p>
             </div>
         </div>
     </section>
@@ -238,7 +233,7 @@
         <div class="container-fluid">
             <div class="row mx-2">
                 <!-- Textová časť -->
-                <div class="trofeje col-lg-8 mb-4">
+                <div class="uspechy-text col-lg-8 mb-4">
                     <div class="p-3">
                         <h1>Tituly West Hamu United FC</h1>
                         <h2>Domáce poháre</h2>
@@ -260,11 +255,11 @@
                     </div>
                 </div>
                 <!-- Obrázková časť -->
-                <div class="trofeje-obr col-lg-4">
-                    <div class="text-center mb-2">
+                <div class="uspechy-obr col-lg-4">
+                    <div class="text-center mb-2 my-5">
                         <img src="{{ asset('pics/West-ham-trofej.jpg') }}" alt="West Ham trofej" class="img-fluid rounded">
                     </div>
-                    <div class="uspechy-obr-popis p-2 text-center">
+                    <div class="uspechy-obr-popis p-2 text-center my-2">
                         <p>Kapitán Declan Rice dvíha trofej Konferenčnej Ligy UEFA</p>
                     </div>
                 </div>

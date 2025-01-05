@@ -234,7 +234,7 @@
         <div class="container-fluid">
             <div class="row mx-2">
                 <!-- Textová časť -->
-                <div class="trofeje col-lg-8 mb-4">
+                <div class="uspechy-text col-lg-8 mb-4">
                     <div class="p-3">
                         <h1>Tituly Crystal Palace FC</h1>
                         <h2>Domáce poháre</h2>
@@ -251,7 +251,7 @@
                     </div>
                 </div>
                 <!-- Obrázková časť -->
-                <div class="trofeje-obr col-lg-4">
+                <div class="uspechy-obr col-lg-4">
                     <div class="text-center mb-2">
                         <img src="{{ asset('pics/Palace-trofej.jpg') }}" alt="Palace trofej" class="img-fluid rounded">
                     </div>

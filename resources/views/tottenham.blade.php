@@ -21,7 +21,7 @@
                     kohútov používaných v kohútích zápasoch. Kohút na lopte na ich embléme sa stal jedným z najznámejších symbolov anglického futbalu.
                 </p>
             </div>
-            <div class="col-md-4 text-center intro-obr">
+            <div class="col-md-4 my-5 text-center">
                 <img src="{{ asset('pics/Tottenham-logo.png') }}" alt="tottenham logo" class="img-fluid rounded">
             </div>
         </div>
@@ -236,7 +236,7 @@
         <div class="container-fluid">
             <div class="row mx-2">
                 <!-- Textová časť -->
-                <div class="trofeje col-lg-8 mb-4">
+                <div class="uspechy-text col-lg-8 mb-4">
                     <div class="p-3">
                         <h1>Tituly Tottenhamu Hotspur FC</h1>
                         <h2>Domáce poháre</h2>
@@ -258,11 +258,11 @@
                     </div>
                 </div>
                 <!-- Obrázková časť -->
-                <div class="trofeje-obr col-lg-4">
-                    <div class="text-center mb-2">
+                <div class="uspechy-obr col-lg-4">
+                    <div class="text-center mb-2 my-4">
                         <img src="{{ asset('pics/Tottenham-trofej.jpg') }}" alt="Tottenham trofej" class="img-fluid rounded">
                     </div>
-                    <div class="uspechy-obr-popis p-2 text-center">
+                    <div class="uspechy-obr-popis p-2 text-center my-2">
                         <p>Hráči Tottenhamu oslavujú triumf v Carabao Cupe</p>
                     </div>
                 </div>

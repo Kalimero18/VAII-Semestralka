@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StatsPlayerController;
+use App\Http\Controllers\NavrhyController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -60,6 +61,11 @@ Route::get('/', function () {
 
 Route::resource('stats_players', StatsPlayerController::class);
 Route::post('/stats_players', [StatsPlayerController::class, 'store'])->name('stats_players.store');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/navrhy', [NavrhyController::class, 'index'])->name('navrhy');
+    Route::post('/navrhy', [NavrhyController::class, 'store'])->name('navrhy.store');
+});
 
 
 require __DIR__.'/auth.php';
