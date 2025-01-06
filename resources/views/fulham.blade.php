@@ -260,5 +260,49 @@
         </div>
     </section>
 
+    <section class="py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <div class="uspechy-text col-lg-8 mb-4">
+                    <div class="coll-mb-3 mb-3">
+                        <h1 class="text-center">10 Najlepčích hráčov histórie Fulhamu</h1>
+                        <p> 1. - Johhny Haynes - Stredný záložník (1952-1970) 658 zápasov, 158 gólov, 123 asistencií, 0 trofejí<br>
+                            2. - Eddie Lowe - Pravý záložník (1950-1963) 511 zápasov, 10 gólov, 12 asistencií, 0 trofejí<br>
+                            3. - Les Barrett - Ľavé Krídlo (1965-1977) 491 zápasov, 90 gólov, 37 asistencií, 0 trofejí<br>
+                            4. - George Cohen - Pravý obránca (1956-1969) 459 zápasov, 6 gólov, 2 asistencií, 0 trofejí<br>
+                            5. - Gordon Davies - Podhrotový útočník (1978-1984, 1986-1991) 454 zápasov, 178 gólov, 31 asistencií, 0 trofejí<br>
+                            6. - Bedford Jezzard - Podhrotový útočník (1948-1956) 305 zápasov, 154 gólov, 34 asistencií, 1 trofej<br>
+                            7. - Jim Hammond - Podhrotový útočník (1928-1938) 220 zápasov, 80 gólov, 2 asistencií, 0 trofejí<br>
+                            8. - Graham Leggat - Pravé krídlo (1958-1967) 280 zápasov, 135 gólov, 20 asistencií, 0 trofejí<br>
+                            9. - Arthur Stevens - Pravé krídlo (1941-1959) 411 zápasov, 123 gólov, 61 asistencií, 1 trofej<br>
+                            10. - Aleksandar Mitrovič - Hrotový útočník (2018-2023) 206 zápasov, 111 gólov, 21 asistencií, 2 trofeje<br>
+                            <br>
+                            <strong>Zvolené hodnotenie aj poradie hráčov je čisto názorom admina stránky.</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center mb-2 ">
+                        <img src="{{ asset('pics/Haynes.jpg') }}" alt="Top hrac" class="trofeje-obr">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Johnny Haynes, kráľ futbalu vo Fulhame</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rating-section container-fluid text-center my-4">
+        <h2>Ohodnoť Stránku Fulham FC</h2>
+        <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+    </section>
 </div>
+
+<script src="{{ asset('js/SrandyCezJS.js') }}"></script>
 @endsection

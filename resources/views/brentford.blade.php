@@ -263,5 +263,49 @@
         </div>
     </section>
 
+    <section class="py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <div class="uspechy-text col-lg-8 mb-4">
+                    <div class="p-3">
+                        <h1 class="text-center">10 Najlepčích hráčov histórie Brentfordu</h1>
+                        <p> 1. - Ken Coote - Stredný obránca (1949-1964) 514 zápasov, 14 gólov, 10 asistencií, 2 trofeje<br>
+                            2. - Jim Towers - Hrotový útočník (1954-1961) 282 zápasov, 163 gólov, X asistencií, 0 trofejí<br>
+                            3. - George Francis - Hrotový útočník (1955-1962) 280 zápasov, 136 gólov, X asistencií, 0 trofejí<br>
+                            4. - Jack Holliday - Pravý krídelník (1932-1939) 222 zápasov, 122 gólov, X asistencií, 2 trofeje<br>
+                            5. - Dean Holdsworth - Hrotový útočník (1988-1993) 164 zápasov, 76 gólov, 24 asistencií, 0 trofejí<br>
+                            6. - Billy Scott - Hrotový útočník (1935-1939) 124 zápasov, 39 gólov, X asistencií, 0 trofejí<br>
+                            7. - Jack Lane - Pravý krídelník (1929-1932) 123 zápasov, 89 gólov, X asistencií, 0 trofejí<br>
+                            8. - Lloyd Owusu - Hrotový útočník(1998-2002, 2004) 250 zápasov, 87 gólov, 31 asistencií, 1 trofej<br>
+                            9. - Kevin O'Connor - Defenzívny záložník (1999-2015) 501 zápasov, 44 gólov, 34 asistencií, 2 trofeje<br>
+                            10. - Ivan Toney - Hrotový útočník (2020-2023) 96 zápasov, 68 gólov, 20 asistencií, 1 trofej<br>
+                            <br>
+                            <strong>Zvolené hodnotenie aj poradie hráčov je čisto názorom admina stránky. </strong> </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center mb-2 ">
+                        <img src="{{ asset('pics/Coote.jpg') }}" alt="Top hrac" class="trofeje-obr">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Ken Coote, najuznávanejší hráč fanúšikmi Brentfordu FC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rating-section container-fluid text-center my-4">
+        <h2>Ohodnoť Stránku Brentford FC</h2>
+        <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+    </section>
 </div>
+
+<script src="{{ asset('js/SrandyCezJS.js') }}"></script>
 @endsection

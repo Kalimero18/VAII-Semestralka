@@ -262,6 +262,49 @@
             </div>
         </div>
     </section>
+    <section class="py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <div class="uspechy-text col-lg-8 mb-4">
+                    <div class="coll-mb-3 mb-3">
+                        <h1 class="text-center">10 Najlepčích hráčov histórie Crystal Palace</h1>
+                        <p> 1. - Wilfried Zaha - Ľavé krídlo (2014-2023) 458 zápasov, 90 gólov, 52 asistencií, 0 trofejí<br>
+                            2. - Johnny Byrne - Hrotový útočník (1956-1962, 1968) 132 zápasov, 56 gólov, 14 asistencií, 0 trofejí<br>
+                            3. - Julian Speroni - Brankár (2004-2019) 405 zápasov, 112 čistých kont, 0 trofejí<br>
+                            4. - Mark Bright - Podhrotový útočník (1986-1992) 121 zápasov, 43 gólov, 1 asistencií, 0 trofejí<br>
+                            5. - John Jackson - Brankár (1964-1973) 169 zápasov, 1 gól, 43 čístých kont, 0 trofejí<br>
+                            6. - Andy Johnson - Ofenzívny záložník (2002-2006, 2015) 158 zápasov, 83 gólov, 7 asistencií, 0 trofejí<br>
+                            7. - Vince Hilaire - Stredný záložník (1977-1984) 83 zápasov, 10 gólov, 1 asistencií, 0 trofejí<br>
+                            8. - Ian Wright - Hrotový útočník (1985-1991) 78 zápasov, 30 gólov, 1 asistencií, 0 trofejí<br>
+                            9. - Jim Cannon - Stredný obránca (1971-1988) 399 zápasov, 6 gólov, 1 asistencií, 0 trofejí<br>
+                            10. - Geoff Thomas - Stredný záložník (1988-1993) 141 zápasov, 16 gólov, 2 asistencií, 0 trofejí<br>
+                            <br>
+                            <strong>Zvolené hodnotenie aj poradie hráčov je čisto názorom admina stránky.</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center mb-2 ">
+                        <img src="{{ asset('pics/Zaha.jpg') }}" alt="Top hrac" class="trofeje-obr">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Wilfried Zaha, symbol modernej éry Crystal Palace</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="rating-section container-fluid text-center my-4">
+        <h2>Ohodnoť Stránku Crystal Palace FC</h2>
+        <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+    </section>
 </div>
+
+<script src="{{ asset('js/SrandyCezJS.js') }}"></script>
 @endsection

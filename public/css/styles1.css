@@ -177,10 +177,6 @@ body {
     color: black;
 }
 
-.uspechy-obr {
-    margin-top: 200px;
-}
-
 .uspechy-obr-popis {
     width: 100%;
     max-width: 100%;
@@ -194,10 +190,10 @@ body {
 
 .trofeje-obr {
     width: 100% !important;
+    height: 335px;
     border-radius: 10px !important;
-    margin-top: 80px;
+    margin-top: 20px;
 }
-
 
 /* ---------------------------------------------------------------------------------------- Kluby ------------------------------------------------------------------------------------------------------------------- */
 .kluby {
@@ -276,6 +272,32 @@ body {
         transform: scale(1);
     }
 }
+/* -------------------------------------------------------------------------------Hodnotenie---------------------------------------------*/
+
+.rating-section h2 {
+    color: white;
+}
+
+.star-rating {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.star-rating .star {
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star-rating .star.active,
+.star-rating .star.hover {
+    color: gold;
+}
+
 
 
 

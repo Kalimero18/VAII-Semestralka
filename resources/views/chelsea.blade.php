@@ -273,5 +273,51 @@
                 </div>
             </div>
         </section>
+
+        <section class="py-4">
+            <div class="container-fluid">
+                <div class="row mx-2">
+                    <div class="uspechy-text col-lg-8 mb-4">
+                        <div class="p-3">
+                            <h1 class="text-center">10 Najlepčích hráčov histórie Chelsea</h1>
+                            <p> 1. - Frank Lampard - Stredný záložník (2001-2014) 648 zápasov, 221 gólov, 146 asistencií, 11 trofejí<br>
+                                2. - John Terry - Stredný obránca (2000-2017) 717 zápasov, 67 gólov, 27 asistencií, 15 trofejí<br>
+                                3. - Gianfranco Zola - Podhrotový útočník (1996-2008) 312 zápasov, 80 gólov, 41 asistencií, 6 trofejí<br>
+                                4. - Didier Drogba - Hrotový útočník (2004-2012, 2015) 381 zápasov, 164 gólov, 80 asistencií, 12 trofejí<br>
+                                5. - Peter Osgood - Hrotový útočník (1964-1974) 336 zápasov, 139 gólov, 1 asistencia, 2 trofeje<br>
+                                6. - Petr Čech - Brankár (2004-2015) 494 zápasov, 228 čístých kont, 13 trofejí<br>
+                                7. - Ron Harris - Stredný obránca (1960-1980) 685 zápasov, 14 gólov, X asistencií, 2 trofeje<br>
+                                8. - Eden Hazard - Ľavé krídlo (2012-2019) 352 zápasov, 110 gólov, 85 asistencií, 6 trofejí<br>
+                                9. - Dennis Wise - Defenzívny záložník (1990-2001) 433 zápasov, 70 gólov, 46 asistencií, 5 trofejí<br>
+                                10. - Roy Bentley - Hrotový útočník (1948-1956) 335 zápasov, 137 gólov, X asistencií, 2 trofeje<br>
+                                <br>
+                                <strong>Zvolené hodnotenie aj poradie hráčov je čisto názorom admina stránky.</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center mb-2 ">
+                            <img src="{{ asset('pics/Lampard.jpg') }}" alt="Top hrac" class="trofeje-obr">
+                        </div>
+                        <div class="uspechy-obr-popis p-2 text-center">
+                            <p>Frank Lampard, najlepší strelec histórie Chelsea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rating-section container-fluid text-center my-4">
+            <h2>Ohodnoť Stránku Chelsea FC</h2>
+            <div class="star-rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ asset('js/SrandyCezJS.js') }}"></script>
     </div>
 @endsection

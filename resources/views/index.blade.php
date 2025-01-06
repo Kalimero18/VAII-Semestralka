@@ -6,7 +6,7 @@
 
 <div class="uvod">
     <section class="uvodny-text">
-        <h1>Futbal v Londýne</h1>
+        <h1 id="typingText"></h1>
         <p>Srdečne vás vítam na mojej webovej stránke, ktorá je venovaná tým najznámejším futbalovým klubom z hlavného mesta Anglicka. Londýn je domovom prestížnych klubov ako Arsenal, Chelsea, Tottenham a mnohých ďalších. <br>
             Na tejto stránke nájdete všetko, čo potrebujete vedieť o týchto kluboch.</p>
 
@@ -31,4 +31,6 @@
 </section>
 
 </div>
+
+<script src="{{ asset('js/SrandyCezJS.js') }}"></script>
 @endsection

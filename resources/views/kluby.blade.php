@@ -56,7 +56,7 @@
         <h2 class="text-center mt-4">Ďalšie kluby budú pridané už čoskoro!</h2>
     </div>
 
-    <script src="{{ asset('js/animaciaLogo.js') }}"></script>
+    <script src="{{ asset('js/SrandyCezJS.js') }}"></script>
 @endsection
 
 

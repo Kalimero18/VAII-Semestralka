@@ -267,5 +267,49 @@
         </div>
     </section>
 
+    <section class="py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <div class="uspechy-text col-lg-8 mb-4">
+                    <div class="coll-mb-3 mb-3">
+                        <h1 class="text-center">10 Najlepčích hráčov histórie West Hamu</h1>
+                        <p> 1. - Bobby Moore - Stredný obránca (1958-1974) 586 zápasov, 26 gólov, 5 asistencií, 2 trofeje<br>
+                            2. - Billy Bonds - Defenzívny záložník (1967-1987) 608 zápasov, 46 gólov, 4 asistencie, 2 trofeje<br>
+                            3. - Mark Noble - Stredný záložník (2005-2022) 550 zápasov, 62 gólov, 58 asistencií, 0  trofejí<br>
+                            4. - Frank Lampard sr. - Ľavý obránca (1967-1985) 500 zápasov, 17 gólov, 4 asistencie, 2 trofeje<br>
+                            5. - Trevor Brooking - Ofenzívny záložník (1967-1984) 486 zápasov, 79 gólov, 9 asistencií, 2 trofeje<br>
+                            6. - Geoff Hurth - Hrotový útočník (1959-1972) 452 zápasov, 213 gólov, 3 asistencie, 1 trofej<br>
+                            7. - Ken Brown - Stredný obránca (1953-1966) 362 zápasov, 4 góly, 0 asistencií, 2 trofeje<br>
+                            8. - Aaron Cresswell - Ľavý obránca (2014- ) 356 zápasov, 11 gólov, 37 asistencií, 1 trofej<br>
+                            9. - Alvin Martin - Stredný obránca (1977-1996) 349 zápasov, 24 gólov, 4 asistencií, 0 trofejí<br>
+                            10. - Martin Peters - Ľavý záložník (1962-70) 338 zápasov, 90 gólov, 5 asistencií, 2 trofeje<br>
+                            <br>
+                            <strong>Zvolené hodnotenie aj poradie hráčov je čisto názorom admina stránky.</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center mb-2 ">
+                        <img src="{{ asset('pics/Moore.jpg') }}" alt="Top hrac" class="trofeje-obr">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Bobby Moore, kapitán majstrov sveta z roku 1966</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rating-section container-fluid text-center my-4">
+        <h2>Ohodnoť Stránku West Ham United FC</h2>
+        <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+    </section>
 </div>
+
+<script src="{{ asset('js/SrandyCezJS.js') }}"></script>
 @endsection

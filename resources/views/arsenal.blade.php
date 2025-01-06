@@ -238,7 +238,6 @@
     <section class="uspechy py-4">
         <div class="container-fluid ">
             <div class="row mx-2">
-                <!-- Textová časť -->
                 <div class="uspechy-text col-lg-8 mb-4">
                     <div class="p-3">
                         <h1>Tituly Arsenalu FC</h1>
@@ -272,7 +271,49 @@
         </div>
     </section>
 
+    <section class="py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <div class="uspechy-text col-lg-8 mb-4">
+                    <div class="p-3">
+                        <h1 class="text-center">10 Najlepčích hráčov histórie Arsenalu</h1>
+                        <p> 1. - Thierry Henry - Hrotový útočník (1999-2007, 2012) 377 zápasov, 228 gólov, 93 asistencií, 8 trofejí<br>
+                            2. - Dennis Bergkamp - Podhrotový útočník (1995-2006) 422 zápasov, 120 gólov, 115 asistencií, 7 trofejí<br>
+                            3. - Tony Adams - Stredný obránca (1983-2002) 653 zápasov, 48 gólov, 11 asistencií, 10 trofejí<br>
+                            4. - Patrick Vieira - Stredný záložník (1996-2005) 405zápasov, 32 gólov, 50 asistencií, 7 trofejí<br>
+                            5. - David O'Leary - Stredný obránca (1975-1993) 673 zápasov, 13 gólov, 2 asistencií, 7 trofejí<br>
+                            6. - Ian Wright - Hrotový útočník (1991-1998) 287 zápasov, 185 gólov, 31 asistencií, 5 trofejí<br>
+                            7. - Robert Pires - Ľavý záložník (2000-2006) 284 zápasov, 84 gólov, 63 asistencií, 5 trofejí<br>
+                            8. - David Seaman - Brankár (1990-2003) 560 zápasov, 236 čistých kont, 9 trofejí<br>
+                            9. - Freddie Ljungberg - Pravý záložník (1998-2007) 328 zápasov, 72 gólov, 40 asistencií, 5 trofejí<br>
+                            10. - Lee Dixon - Pravý obránca (1988-2002) 617 zápasov, 27 gólov, 27 asistencií, 8 trofejí<br>
+                            <br>
+                            <strong>Zvolené hodnotenie aj poradie hráčov je čisto názorom admina stránky.</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center mb-2 ">
+                        <img src="{{ asset('pics/Henry.jpg') }}" alt="Top hrac" class="trofeje-obr">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Thierry Henry, štvornásobný najlepší strelec Premier League</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="rating-section container-fluid text-center my-4">
+        <h2>Ohodnoť Stránku Arsenal FC</h2>
+        <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+    </section>
 </div>
 
+<script src="{{ asset('js/SrandyCezJS.js') }}"></script>
 @endsection

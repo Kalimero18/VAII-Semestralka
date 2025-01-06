@@ -270,5 +270,49 @@
         </div>
     </section>
 
+    <section class="py-4">
+        <div class="container-fluid">
+            <div class="row mx-2">
+                <div class="uspechy-text col-lg-8 mb-4">
+                    <div class="coll-mb-3 mb-3">
+                        <h1 class="text-center">10 Najlepčích hráčov histórie Tottenhamu</h1>
+                        <p> 1. - Harry Kane - Hrotový útočník (2010-2023) 435 zápasov, 280 gólov, 61 asistencií, 0 trofejí<br>
+                            2. - Jimmy Greaves - Podhrotový útočník (1961-1970) 374 zápasov, 266 gólov, 14 asistencií, 2 trofeje<br>
+                            3. - Glenn Hoddle - Ofenzívny záložník (1974-1987) 427 zápasov, 94 gólov, 50 asistencií, 2 trofeje<br>
+                            4. - Ledley King - Stredný obránca (1998-2012) 323 zápasov, 14 gólov, 8 asistencií, 1 trofej<br>
+                            5. - Dave Mackay - Stredný záložník (1959-1968) 328 zápasov, 58 gólov, 11 asistencií, 5 trofejí<br>
+                            6. - Danny Blanchflower - Stredný záložník (1954-1964) 368 zápasov, 19 gólov, 16 asistencií, 5 trofejí<br>
+                            7. - Pat Jennings - Brankár (1964-1977, 1985) 552 zápasov, 1 gól, 166 čistých kont, 4 trofeje<br>
+                            8. - Gary Lineker - Hrotový útočník (1989-1992) 139 zápasov, 80 gólov, 5 asistencií, 1 trofej<br>
+                            9. - Paul Gascoigne - Ofenzívny záložník (1988-1992) 112 zápasov, 33 gólov, 6 asistencií, 1 trofej<br>
+                            10. - Gareth Bale - Pravé krídlo (2007-2013, 2021) 237 zápasov, 71 gólov, 53 asistencií, 0 trofejí<br>
+                            <br>
+                            <strong>Zvolené hodnotenie aj poradie hráčov je čisto názorom admina stránky.</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center mb-2 ">
+                        <img src="{{ asset('pics/Kane.jpg') }}" alt="Top hrac" class="trofeje-obr">
+                    </div>
+                    <div class="uspechy-obr-popis p-2 text-center">
+                        <p>Harry Kane, najlepší strelec histórie Tottenhamu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rating-section container-fluid text-center my-4">
+        <h2>Ohodnoť Stránku Tottenham Hotspur FC</h2>
+        <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+    </section>
 </div>
+
+<script src="{{ asset('js/SrandyCezJS.js') }}"></script>
 @endsection
