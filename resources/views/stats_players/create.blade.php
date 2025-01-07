@@ -25,6 +25,11 @@
             </div>
 
             <div class="col-md-6">
+                <label for="team" class="form-label">Tím</label>
+                <input type="text" name="team" id="team" class="formular-kontrola" value="{{ old('team') }}" required>
+            </div>
+
+            <div class="col-md-6">
                 <label for="position" class="form-label">Pozícia</label>
                 <input type="text" name="position" id="position" class="formular-kontrola" value="{{ old('position') }}" required>
             </div>

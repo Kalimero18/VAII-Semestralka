@@ -39,8 +39,6 @@
                         <td>{{ $team->losses }}</td>
                         <td>{{ $team->points }}</td>
                         <td>
-                            <a href="{{ route('stats_teams.show', $team->id) }}" class="btn btn-info btn-sm">Zobraziť</a>
-
                             <a href="{{ route('stats_teams.edit', $team->id) }}" class="btn btn-varovanie btn-sm">Upraviť</a>
 
                             <form action="{{ route('stats_teams.destroy', $team->id) }}" method="POST" class="d-inline">

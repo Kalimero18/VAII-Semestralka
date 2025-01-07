@@ -19,6 +19,7 @@
                 <tr>
                     <th>#</th>
                     <th>Meno</th>
+                    <th>Tím</th>
                     <th>Pozícia</th>
                     <th>Odohrané zápasy</th>
                     <th>Góly</th>
@@ -32,14 +33,13 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $player->name }}</td>
+                        <td>{{ $player->team }}</td>
                         <td>{{ $player->position }}</td>
                         <td>{{ $player->matches }}</td>
                         <td>{{ $player->goals }}</td>
                         <td>{{ $player->assists }}</td>
                         <td>${{ number_format($player->market_value, 2) }}</td>
                         <td>
-                            <a href="{{ route('stats_players.show', $player->id) }}" class="btn btn-info btn-sm">Zobraziť</a>
-
                             <a href="{{ route('stats_players.edit', $player->id) }}" class="btn btn-varovanie btn-sm">Upraviť</a>
 
                             <form action="{{ route('stats_players.destroy', $player->id) }}" method="POST" class="d-inline">

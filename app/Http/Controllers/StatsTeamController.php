@@ -32,15 +32,6 @@ class StatsTeamController extends Controller
         return redirect()->route('stats_teams.index')->with('success', 'Tím bol pridaný!');
     }
 
-    public function show($id) {
-        $statistic = StatsPlayer::find($id);
-
-        if (!$statistic) {
-            return redirect()->route('stats_teams.index')->with('error','Tím sa nenašiel');
-        }
-        return view('stats_teams.show', compact('statistic'));
-    }
-
     public function edit($id) {
         $statistic = StatsTeam::findOrFail($id);
         return view('stats_teams.edit', compact('statistic'));

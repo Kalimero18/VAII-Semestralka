@@ -23,7 +23,8 @@ class StatsPlayerController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'position' => 'required|string|max:50',
+            'team' => 'required|string|max:255',
+            'position' => 'required|string|max:10',
             'matches' => 'required|integer',
             'goals' => 'nullable|integer',
             'assists' => 'nullable|integer',
@@ -33,16 +34,6 @@ class StatsPlayerController extends Controller
         StatsPlayer::create($validated);
 
         return redirect()->route('stats_players.index')->with('success', 'Hráč bol pridaný!');
-    }
-
-    public function show($id)
-    {
-        $statistic = StatsPlayer::find($id);
-
-        if (!$statistic) {
-            return redirect()->route('stats_players.index')->with('error', 'Hráč  sa nenašiel');
-        }
-        return view('stats_players.show', compact('statistic'));
     }
 
     public function edit($id)
@@ -57,7 +48,8 @@ class StatsPlayerController extends Controller
 
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'position' => 'required|string|max:50',
+            'team' => 'required|string|max:255',
+            'position' => 'required|string|max:10',
             'matches' => 'required|integer',
             'goals' => 'nullable|integer',
             'assists' => 'nullable|integer',

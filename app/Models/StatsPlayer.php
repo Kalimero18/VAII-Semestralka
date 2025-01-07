@@ -11,7 +11,7 @@ class StatsPlayer extends Model
 
     protected $table = 'stats_players';
 
-    protected $fillable = ['name', 'position', 'matches', 'goals', 'assists', 'market_value'];
+    protected $fillable = ['name', 'team', 'position', 'matches', 'goals', 'assists', 'market_value'];
 
     public $timestamps = true;
 }
