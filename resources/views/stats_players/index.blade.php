@@ -46,7 +46,7 @@
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-pozor btn-sm"
-                                        onclick="return confirm('Are you sure you want to delete this player?');">
+                                        onclick="return confirm('Určite chceš zmazať tohto hráča?');">
                                     Zmazať
                                 </button>
                             </form>
@@ -65,7 +65,6 @@
             <a href="{{ route('stats_players.create') }}" class="btn btn-hlavny">Pridaj nového hráča</a>
         </div>
     </div>
-
 @endsection
 
 

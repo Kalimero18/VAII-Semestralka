@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StatsPlayerController;
+use App\Http\Controllers\StatsTeamController;
 use App\Http\Controllers\NavrhyController;
 
 Route::get('/', function () {
@@ -61,6 +62,9 @@ Route::get('/', function () {
 
 Route::resource('stats_players', StatsPlayerController::class);
 Route::post('/stats_players', [StatsPlayerController::class, 'store'])->name('stats_players.store');
+
+Route::resource('stats_teams', StatsTeamController::class);
+Route::post('/stats_teams', [StatsTeamController::class, 'store'])->name('stats_teams.store');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/navrhy', [NavrhyController::class, 'index'])->name('navrhy');
