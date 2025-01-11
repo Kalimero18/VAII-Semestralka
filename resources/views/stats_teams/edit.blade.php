@@ -45,6 +45,11 @@
                 <input type="number" name="losses" id="losses" class="formular-kontrola" value="{{ old('losses', $statistic->losses) }}" required>
             </div>
 
+            <div class="col-md-4">
+                <label for="points" class="form-label">Body</label>
+                <input type="number" name="points" id="points" class="formular-kontrola" value="{{ old('points', $statistic->points) }}" required>
+            </div>
+
             <div class="col-12 d-flex justify-content-between">
                 <button type="submit" class="btn btn-hlavny">Aktualizuj</button>
                 <a href="{{ route('stats_teams.index') }}" class="btn btn-secondary">Zrušiť</a>

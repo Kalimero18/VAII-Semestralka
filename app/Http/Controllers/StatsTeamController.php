@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\StatsPlayer;
 use App\Models\StatsTeam;
 use Illuminate\Http\Request;
 

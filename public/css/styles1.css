@@ -290,12 +290,12 @@ body {
     font-size: 2rem;
     color: gray;
     cursor: pointer;
-    transition: color 0.2s;
+    transition: color 0.2s !important;
 }
 
 .star-rating .star.active,
 .star-rating .star.hover {
-    color: gold;
+    color: gold !important;
 }
 
 
