@@ -7,20 +7,14 @@ use App\Http\Controllers\StatsPlayerController;
 use App\Http\Controllers\StatsTeamController;
 use App\Http\Controllers\NavrhyController;
 
-
+// Verejné trasy
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('index');
+})->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
 
 Route::get('/oprojekte', function () {
     return view('oProjekte');
@@ -58,62 +52,63 @@ Route::get('/west-ham', function () {
     return view('west-ham');
 })->name('west_ham');
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-Route::get('/stats_players', [StatsPlayerController::class, 'index'])
-    ->middleware('auth')
-    ->name('stats_players.index');
-
-Route::get('/stats_players/create', [StatsPlayerController::class, 'create'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_players.create');
-
-Route::post('/stats_players', [StatsPlayerController::class, 'store'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_players.store');
-
-Route::get('/stats_players/{id}/edit', [StatsPlayerController::class, 'edit'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_players.edit');
-
-Route::put('/stats_players/{id}', [StatsPlayerController::class, 'update'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_players.update');
-
-Route::delete('/stats_players/{id}', [StatsPlayerController::class, 'destroy'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_players.destroy');
-
-Route::get('/stats_teams', [StatsTeamController::class, 'index'])
-    ->middleware('auth')
-    ->name('stats_teams.index');
-
-Route::get('/stats_teams/create', [StatsTeamController::class, 'create'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_teams.create');
-
-Route::post('/stats_teams', [StatsTeamController::class, 'store'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_teams.store');
-
-Route::get('/stats_teams/{id}/edit', [StatsTeamController::class, 'edit'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_teams.edit');
-
-Route::put('/stats_teams/{id}', [StatsTeamController::class, 'update'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_teams.update');
-
-Route::delete('/stats_teams/{id}', [StatsTeamController::class, 'destroy'])
-    ->middleware(['auth', JeAdmin::class])
-    ->name('stats_teams.destroy');
-
-
-Route::middleware(['auth'])->group(function () {
     Route::get('/navrhy', [NavrhyController::class, 'index'])->name('navrhy');
     Route::post('/navrhy', [NavrhyController::class, 'store'])->name('navrhy.store');
+    Route::patch('/navrhy/{id}/update-inline', [NavrhyController::class, 'updateInline'])->name('navrhy.update-inline');
+
+    Route::resource('stats_players', StatsPlayerController::class)
+        ->middleware('auth')
+        ->names([
+            'index' => 'stats_players.index',
+            'create' => 'stats_players.create',
+            'store' => 'stats_players.store',
+            'edit' => 'stats_players.edit',
+            'update' => 'stats_players.update',
+            'destroy' => 'stats_players.destroy',
+        ]);
+
+    Route::get('/stats_players/filter', [StatsPlayerController::class, 'filter'])
+        ->middleware('auth')
+        ->name('stats_players.filter');
+
+    Route::resource('stats_teams', StatsTeamController::class)
+        ->middleware('auth')
+        ->names([
+            'index' => 'stats_teams.index',
+            'create' => 'stats_teams.create',
+            'store' => 'stats_teams.store',
+            'edit' => 'stats_teams.edit',
+            'update' => 'stats_teams.update',
+            'destroy' => 'stats_teams.destroy',
+        ]);
+});
+
+Route::middleware(['auth', JeAdmin::class])->group(function () {
+    Route::resource('stats_players', StatsPlayerController::class)
+        ->only(['create', 'store', 'edit', 'update', 'destroy'])
+        ->names([
+            'create' => 'stats_players.create',
+            'store' => 'stats_players.store',
+            'edit' => 'stats_players.edit',
+            'update' => 'stats_players.update',
+            'destroy' => 'stats_players.destroy',
+        ]);
+
+    Route::resource('stats_teams', StatsTeamController::class)
+        ->only(['create', 'store', 'edit', 'update', 'destroy'])
+        ->names([
+            'create' => 'stats_teams.create',
+            'store' => 'stats_teams.store',
+            'edit' => 'stats_teams.edit',
+            'update' => 'stats_teams.update',
+            'destroy' => 'stats_teams.destroy',
+        ]);
 });
 
 require __DIR__.'/auth.php';
+

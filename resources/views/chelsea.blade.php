@@ -305,19 +305,6 @@
                 </div>
             </div>
         </section>
-
-        <section class="rating-section container-fluid text-center my-4">
-            <h2>Ohodnoť Stránku Chelsea FC</h2>
-            <div class="star-rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-            </div>
-        </section>
     </div>
-
-    <script src="{{ asset('js/SrandyCezJS.js') }}"></script>
     </div>
 @endsection

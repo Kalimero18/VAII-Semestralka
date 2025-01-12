@@ -28,13 +28,58 @@
         <h2 class="text-center">Vaše návrhy</h2>
         <div class="list-group">
             @forelse ($navrhy as $navrh)
-                <div class="list-group-item">
-                    <h5>{{ $navrh->nazov_klubu }} <small class="text-muted">od {{ $navrh->user->name }}</small></h5>
-                    <p>{{ $navrh->popis }}</p>
+                <div class="list-group-item" data-id="{{ $navrh->id }}">
+                    <h5>
+                        <span contenteditable="true" class="uprava" data-field="nazov_klubu">{{ $navrh->nazov_klubu }}</span>
+                        <small class="text-muted">od {{ $navrh->user->name }}</small>
+                    </h5>
+                    <p>
+                        <span contenteditable="true" class="uprava" data-field="popis">{{ $navrh->popis }}</span>
+                    </p>
                 </div>
             @empty
                 <p class="text-center">Žiadne návrhy zatiaľ nie sú k dispozícii.</p>
             @endforelse
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.uprava').forEach(cell => {
+                cell.addEventListener('blur', function () {
+                    let id = this.closest('.list-group-item').getAttribute('data-id');
+                    let field = this.getAttribute('data-field');
+                    let value = this.textContent.trim();
+
+                    if (!value) {
+                        alert('Hodnota nemôže byť prázdna!');
+                        return;
+                    }
+
+                    fetch(`/navrhy/${id}/update-inline`, {
+                        method: 'PATCH',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                        },
+                        body: JSON.stringify({ field: field, value: value }),
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                alert(data.message);
+                            } else {
+                                alert('Chyba: ' + data.message);
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Chyba:', error);
+                            alert('Došlo k chybe pri ukladaní údajov.');
+                        });
+                });
+            });
+        });
+
+    </script>
 @endsection
+

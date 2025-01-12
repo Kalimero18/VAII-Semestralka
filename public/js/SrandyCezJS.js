@@ -38,29 +38,6 @@ function typeText() {
 }
 typeText();
 
-document.addEventListener("DOMContentLoaded", () => {
-    const stars = document.querySelectorAll(".star-rating .star");
-
-    stars.forEach((star, index) => {
-        star.addEventListener("click", () => {
-            stars.forEach((s, i) => {
-                s.classList.toggle("active", i <= index);
-            });
-            alert(`Ohodnotili ste ${index + 1} hviezdičkami!`);
-        });
-
-        star.addEventListener("mouseover", () => {
-            stars.forEach((s, i) => {
-                s.classList.toggle("hover", i <= index);
-            });
-        });
-
-        star.addEventListener("mouseout", () => {
-            stars.forEach((s) => s.classList.remove("hover"));
-        });
-    });
-});
-
 
 
 

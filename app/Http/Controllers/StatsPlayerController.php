@@ -66,6 +66,17 @@ class StatsPlayerController extends Controller
         $statistic->delete();
         return redirect()->route('stats_players.index');
     }
+
+    public function filter(Request $request)
+    {
+        $team = $request->query('team');
+        $players = StatsPlayer::when($team, function ($query, $team) {
+            return $query->where('team', 'LIKE', "%$team%");
+        })->get();
+
+        return response()->json($players);
+    }
+
 }
 
 

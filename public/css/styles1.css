@@ -272,31 +272,16 @@ body {
         transform: scale(1);
     }
 }
-/* -------------------------------------------------------------------------------Hodnotenie---------------------------------------------*/
 
-.rating-section h2 {
-    color: white;
+.uprava {
+    border-bottom: 1px dashed #ccc;
+    outline: none;
 }
 
-.star-rating {
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+.uprava:focus {
+    border-bottom: 1px solid #007bff;
 }
 
-.star-rating .star {
-    font-size: 2rem;
-    color: gray;
-    cursor: pointer;
-    transition: color 0.2s !important;
-}
-
-.star-rating .star.active,
-.star-rating .star.hover {
-    color: gold !important;
-}
 
 
 
