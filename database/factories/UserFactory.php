@@ -1,5 +1,5 @@
 <?php
-
+/** Súbor generovaný Laravelom, toto nie je moja práca ponechal som pre správnu funkcionalitu */
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;

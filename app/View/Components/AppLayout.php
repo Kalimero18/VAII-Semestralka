@@ -1,5 +1,5 @@
 <?php
-
+/** Súbor generovaný Laravelom pre generovanie layoutu, toto nie je moja práca ponechal som pre správnu funkcionalitu */
 namespace App\View\Components;
 
 use Illuminate\View\Component;

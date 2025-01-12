@@ -1,5 +1,5 @@
 <?php
-
+/** Táto tabuľka bola generovaná Laravelom, nie je to moja práca, pridal som sem však vytvorenie a priradenie rolí*/
 namespace Database\Seeders;
 
 use App\Models\User;
@@ -13,17 +13,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-
         Role::create(['name' => 'admin']);
         Role::create(['name' => 'pouzivatel']);
 
-        // Priradenie rolí k používateľom
-        $admin = User::find(3); // Uisti sa, že používateľ s ID 3 existuje
+        $admin = User::find(3);
         if ($admin) {
             $admin->assignRole('admin');
         }
 
-        $user = User::find(5); // Uisti sa, že používateľ s ID 2 existuje
+        $user = User::find(5);
         if ($user) {
             $user->assignRole('pouzivatel');
         }

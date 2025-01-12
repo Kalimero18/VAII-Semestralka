@@ -1,5 +1,7 @@
 <?php
-
+/**
+ *Tento súbor bol generovaný Laravelom, nie je to moja práca, ale je ho potreba pre funkcionalitu
+ */
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\ConfirmablePasswordController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;

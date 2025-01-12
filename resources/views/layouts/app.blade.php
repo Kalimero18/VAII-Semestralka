@@ -50,13 +50,9 @@
         </div>
     </div>
 </nav>
-
-<!-- Content -->
 <div>
     @yield('kontent')
 </div>
-
-<!-- Footer -->
 <footer>
     <p>&copy; 2024 Futbal v Londýne</p>
 </footer>

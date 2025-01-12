@@ -1,5 +1,5 @@
 <?php
-
+/** Súbor generovaný Laravel Breeze, toto nie je moja práca ponechal som pre správnu funkcionalitu */
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;

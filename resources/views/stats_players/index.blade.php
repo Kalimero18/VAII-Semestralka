@@ -18,7 +18,6 @@
             <input type="text" id="teamFilter" class="form-control" placeholder="Zadaj názov tímu">
         </div>
 
-
         <div class="table-respozivita">
             <table class="table table-bordered">
                 <thead>
@@ -84,7 +83,7 @@
             if (response.ok) {
                 const players = await response.json();
                 const tbody = document.getElementById('playersTableBody');
-                tbody.innerHTML = ''; // Vymaže existujúce riadky
+                tbody.innerHTML = '';
 
                 if (players.length > 0) {
                     players.forEach(player => {
@@ -121,8 +120,6 @@
             }
         });
     </script>
-
-
 @endsection
 
 

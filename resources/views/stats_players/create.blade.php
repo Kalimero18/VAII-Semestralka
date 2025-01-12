@@ -6,16 +6,6 @@
     <div class="container">
         <h1 class="text-center">Pridaj Štatistiky hráča</h1>
 
-        @if ($errors->any())
-            <div class="upozornenie alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-
         <form action="{{ route('stats_players.store') }}" method="POST" class="row g-3">
             @csrf
 

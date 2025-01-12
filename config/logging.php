@@ -1,5 +1,5 @@
 <?php
-
+/** Súbor generovaný Laravelom, toto nie je moja práca ponechal som pre správnu funkcionalitu */
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;

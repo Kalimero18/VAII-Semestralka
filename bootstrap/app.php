@@ -1,5 +1,5 @@
 <?php
-
+/** Súbor generovaný Laravelom, toto nie je moja práca ponechal som pre správnu funkcionalitu */
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;

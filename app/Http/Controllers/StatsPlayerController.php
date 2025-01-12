@@ -70,12 +70,16 @@ class StatsPlayerController extends Controller
     public function filter(Request $request)
     {
         $team = $request->query('team');
-        $players = StatsPlayer::when($team, function ($query, $team) {
-            return $query->where('team', 'LIKE', "%$team%");
-        })->get();
+
+        if (empty($team)) {
+            $players = StatsPlayer::all();
+        } else {
+            $players = StatsPlayer::where('team', 'like', '%' . $team . '%')->get();
+        }
 
         return response()->json($players);
     }
+
 
 }
 

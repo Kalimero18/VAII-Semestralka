@@ -1,13 +1,15 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use App\Http\Middleware\JeAdmin;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StatsPlayerController;
 use App\Http\Controllers\StatsTeamController;
 use App\Http\Controllers\NavrhyController;
 
-// Verejné trasy
+Route::get('register', function () {
+    return view('auth.register');
+})->name('register');
+
 Route::get('/', function () {
     return view('index');
 })->name('home');
@@ -53,16 +55,13 @@ Route::get('/west-ham', function () {
 })->name('west_ham');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
     Route::get('/navrhy', [NavrhyController::class, 'index'])->name('navrhy');
     Route::post('/navrhy', [NavrhyController::class, 'store'])->name('navrhy.store');
     Route::patch('/navrhy/{id}/update-inline', [NavrhyController::class, 'updateInline'])->name('navrhy.update-inline');
 
     Route::resource('stats_players', StatsPlayerController::class)
         ->middleware('auth')
+        ->except(['show'])
         ->names([
             'index' => 'stats_players.index',
             'create' => 'stats_players.create',
@@ -75,6 +74,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/stats_players/filter', [StatsPlayerController::class, 'filter'])
         ->middleware('auth')
         ->name('stats_players.filter');
+
 
     Route::resource('stats_teams', StatsTeamController::class)
         ->middleware('auth')

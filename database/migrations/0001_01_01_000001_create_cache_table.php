@@ -1,5 +1,5 @@
 <?php
-
+/** Táto tabuľka bola generovaná Laravelom, nie je to moja práca, ale je potrebná aby všetko fungovalo */
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

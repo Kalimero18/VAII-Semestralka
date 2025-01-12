@@ -1,3 +1,4 @@
+<!-- Súbory pre autentifikáciu a login boli vytvorené pomocou Laravel Breeze, tieto kódy boli potom upravené aby sedeli štýlu webstránky -->
 @extends('layouts.app')
 
 @section('title', 'Zabudnute Heslo - Futbal v Londýne')
