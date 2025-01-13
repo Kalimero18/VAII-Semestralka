@@ -28,8 +28,7 @@
             V 20. storočí sa Londýn stal domovom aj pre ďalšie významné kluby, ako sú Tottenham Hotspur, West Ham United a Fulham FC. Rivalita medzi týmito klubmi vytvorila niekoľko nezabudnuteľných momentov v histórii futbalu, pričom derby zápasy medzi Arsenalom a Tottenhamom, známe ako North London Derby, sú jedny z najintenzívnejších a najnavštevovanejších. <br>
             Londýn tiež hostil niekoľko historicky významných udalostí v rámci medzinárodného futbalu, vrátane finále Mistrovstiev sveta 1966 na Wembley. V posledných rokoch sa londýnske kluby pravidelne objavujú v európskych súťažiach, pričom Chelsea vyhrala Ligu majstrov UEFA v rokoch 2012 a 2021, a Arsenal sa tiež snažil o úspech na medzinárodnej scéne.
             Dnes je londýnsky futbal známy nielen svojou konkurenciou a bohatou históriou, ale aj svojou kultúrou, ktorá priťahuje fanúšikov z celého sveta. Futbal je v Londýne nielen športom, ale aj dôležitou súčasťou miestnej identity a kultúry.</p>
-</section>
-
+    </section>
 </div>
 
 <script src="{{ asset('js/SrandyCezJS.js') }}"></script>

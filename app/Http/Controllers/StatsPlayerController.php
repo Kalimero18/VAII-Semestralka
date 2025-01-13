@@ -79,8 +79,6 @@ class StatsPlayerController extends Controller
 
         return response()->json($players);
     }
-
-
 }
 
 

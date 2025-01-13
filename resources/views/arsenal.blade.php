@@ -33,7 +33,6 @@
                 <h1 class="nadpis">Súpiska pre sezónu 2024/2025</h1>
             </div>
 
-            <!-- Brankári -->
             <div class="col-md-3 mb-3">
                 <div class="hraci">
                     <p><strong>Brankári</strong></p>
@@ -48,7 +47,6 @@
                 </div>
             </div>
 
-            <!-- Obrancovia -->
             <div class="col-md-3 mb-3">
                 <div class="hraci">
                     <p><strong>Obrancovia</strong></p>
@@ -67,7 +65,6 @@
                 </div>
             </div>
 
-            <!-- Stredopoliari -->
             <div class="col-md-3 mb-3">
                 <div class="hraci">
                     <p><strong>Stredopoliari</strong></p>
@@ -88,7 +85,6 @@
                 </div>
             </div>
 
-            <!-- Útočníci -->
             <div class="col-md-3 mb-3">
                 <div class="hraci">
                     <p><strong>Útočníci</strong></p>
@@ -106,7 +102,6 @@
             </div>
         </div>
 
-        <!-- Obrázok tímu -->
         <div class="row text-center mt-4">
             <div class="col-12">
                 <img src="{{ asset('pics/Arsenal-supiska.jpg') }}" alt="Arsenal supiska 2024/25" class="timove-foto"> <br>
@@ -257,7 +252,7 @@
                         <p>Arsenal FC sa v sezóne 2003/04 zapísal do histórie anglického futbalu ako prvý a dodnes jediný tím, ktorý vyhral najvyššiu anglickú ligovú súťaž Premier League bez jedinej prehry. Počas tejto sezóny odohrali 38 zápasov, z toho vyhrali 26 a 12 remízovali. Za tento úspech obdržalo mužstvo legendárneho Arsèna Wengera prestížnu zlatú trofej Premier League a dodnes ostávajú jej jediným držiteľom.</p>
                     </div>
                 </div>
-                <!-- Obrázková časť -->
+
                 <div class="uspechy-obr col-lg-4">
                     <div class="text-center mb-2 ">
                         <img src="{{ asset('pics/Arsenal-trofej.jpg') }}" alt="Arsenal fotka trofeje" class="trofeje-obr">
@@ -266,7 +261,6 @@
                         <p>Arsène Wenger držiaci zlatú trofej The Invincibles</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

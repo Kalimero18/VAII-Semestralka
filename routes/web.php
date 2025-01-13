@@ -59,33 +59,11 @@ Route::middleware('auth')->group(function () {
     Route::post('/navrhy', [NavrhyController::class, 'store'])->name('navrhy.store');
     Route::patch('/navrhy/{id}/update-inline', [NavrhyController::class, 'updateInline'])->name('navrhy.update-inline');
 
-    Route::resource('stats_players', StatsPlayerController::class)
-        ->middleware('auth')
-        ->except(['show'])
-        ->names([
-            'index' => 'stats_players.index',
-            'create' => 'stats_players.create',
-            'store' => 'stats_players.store',
-            'edit' => 'stats_players.edit',
-            'update' => 'stats_players.update',
-            'destroy' => 'stats_players.destroy',
-        ]);
+    Route::get('/stats_players', [StatsPlayerController::class, 'index'])->name('stats_players.index');
+    Route::get('/stats_teams', [StatsTeamController::class, 'index'])->name('stats_teams.index');
 
     Route::get('/stats_players/filter', [StatsPlayerController::class, 'filter'])
-        ->middleware('auth')
         ->name('stats_players.filter');
-
-
-    Route::resource('stats_teams', StatsTeamController::class)
-        ->middleware('auth')
-        ->names([
-            'index' => 'stats_teams.index',
-            'create' => 'stats_teams.create',
-            'store' => 'stats_teams.store',
-            'edit' => 'stats_teams.edit',
-            'update' => 'stats_teams.update',
-            'destroy' => 'stats_teams.destroy',
-        ]);
 });
 
 Route::middleware(['auth', JeAdmin::class])->group(function () {
@@ -98,7 +76,6 @@ Route::middleware(['auth', JeAdmin::class])->group(function () {
             'update' => 'stats_players.update',
             'destroy' => 'stats_players.destroy',
         ]);
-
     Route::resource('stats_teams', StatsTeamController::class)
         ->only(['create', 'store', 'edit', 'update', 'destroy'])
         ->names([
@@ -109,6 +86,7 @@ Route::middleware(['auth', JeAdmin::class])->group(function () {
             'destroy' => 'stats_teams.destroy',
         ]);
 });
+
 
 require __DIR__.'/auth.php';
 

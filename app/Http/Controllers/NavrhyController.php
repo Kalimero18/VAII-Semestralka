@@ -59,7 +59,5 @@ class NavrhyController extends Controller
             return response()->json(['success' => false, 'message' => 'Vyskytla sa chyba na serveri.'], 500);
         }
     }
-
-
 }
 

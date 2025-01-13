@@ -16,6 +16,7 @@
 
         <div class="table-respozivita">
             <table class="table table-bordered">
+                <p> <strong> Upravovať, mazať a pridávať môžu iba admini webstránky!</strong></p>
                 <thead>
                 <tr>
                     <th>#</th>

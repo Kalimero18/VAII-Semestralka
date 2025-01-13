@@ -1,3 +1,4 @@
+{{-- Štýly pre túto stránku boli generované cez CHATGPT --}}
 @extends('layouts.app')
 
 @section('title', 'Prihlasenie - Futbal v Londýne')

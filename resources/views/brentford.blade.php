@@ -29,12 +29,10 @@
 
     <section class="supiska container-fluid">
         <div class="row mx-2">
-            <!-- Nadpis -->
             <div class="col-12 text-center mb-4">
                 <h1 class="nadpis">Súpiska pre sezónu 2024/2025</h1>
             </div>
 
-            <!-- Brankári -->
             <div class="col-md-3 mb-3">
                 <div class="hraci">
                     <p><strong>Brankári</strong></p>
@@ -46,7 +44,6 @@
                 </div>
             </div>
 
-            <!-- Obrancovia -->
             <div class="col-md-3 mb-3">
                 <div class="hraci">
                     <p><strong>Obrancovia</strong></p>
@@ -64,7 +61,6 @@
                 </div>
             </div>
 
-            <!-- Stredopoliari -->
             <div class="col-md-3 mb-3">
                 <div class="hraci">
                     <p><strong>Stredopoliari</strong></p>
@@ -85,7 +81,6 @@
                 </div>
             </div>
 
-            <!-- Útočníci -->
             <div class="col-md-3 mb-3">
                 <div class="hraci">
                     <p><strong>Útočníci</strong></p>
@@ -102,7 +97,6 @@
             </div>
         </div>
 
-        <!-- Obrázok tímu -->
         <div class="row text-center mt-4">
             <div class="col-12">
                 <img src="{{ asset('pics/Brentford-supiska.jpg') }}" alt="Brentford supiska 2024/25" class="timove-foto"><br>
@@ -234,7 +228,6 @@
     <section class="uspechy py-4">
         <div class="container-fluid">
             <div class="row mx-2">
-                <!-- Textová časť -->
                 <div class="uspechy-text col-lg-8 mb-4">
                     <div class="p-3">
                         <h1>Tituly Brentfordu FC</h1>
@@ -250,7 +243,7 @@
                             5. a 6. do UEFA Europa League, 7. a 8. do UEFA Conference League, víťaz FA Cupu postupuje do UEFA Europa League.</p>
                     </div>
                 </div>
-                <!-- Obrázková časť -->
+
                 <div class="uspechy-obr col-lg-4">
                     <div class="text-center mb-2">
                         <img src="{{ asset('pics/Brentford-trofej.jpg') }}" alt="Brentford Trofej" class="trofeje-obr">

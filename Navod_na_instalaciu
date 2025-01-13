@@ -1,0 +1,26 @@
+Porjekt funguje cez framework Laravel na lokálnom serveri.
+
+Návod na inštaláciu:
+    1. Požiadavky na systém
+        - PHP (min. verzia 8.1)
+        - Composer
+        - Podporovaná databáza (ja používam SQLite)
+        - Node.js
+    2. Klonovanie projektu
+        - Skopírujte projekt z repozitára pomocou git clone <URL repozitara>
+        - do adresara projektu prejdite príkazom cd nazov_adresara (v mojom prípade VAIIKO)
+    3. Inštalácia závislostí
+        - spustite príkaz na inštaláciu PHP závislostí (composer install)
+    4 Nastavenie prostredia
+        - skopírujte konfiguračný súbor .env.example a premenujte na .env (cp .env.example .env)
+        - treba upraviť niektoré hodnoty napr. pripojenie k databáze
+    5. Vygenerovanie aplikačného kľúča
+        - php artisan:key generate
+    6. Migrácie databázy
+        - Spusti príkaz na vytvorenie potrebných tabuliek
+        - php artisan migrate
+    7. Spustenie servera
+        - php artisan serv
+        - aplikácia bude dostupná na adrese http://127.0.0.1:8000
+    8. Ukončenie
+        - pre ukončenie behu aplikácie stlačte CTRL + C v cmd
