@@ -15,8 +15,8 @@
         @endif
 
         <div class="table-respozivita">
+            <p> <strong> Upravovať, mazať a pridávať môžu iba admini webstránky!</strong></p>
             <table class="table table-bordered">
-                <p> <strong> Upravovať, mazať a pridávať môžu iba admini webstránky!</strong></p>
                 <thead>
                 <tr>
                     <th>#</th>
